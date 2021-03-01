@@ -1,0 +1,62 @@
+.education {
+    background: $bg-color-2;
+    padding: 70px 0;
+
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    &__box {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media (min-width: $small-tablet) {
+            width: 50%;
+        }
+        @media (min-width: $large-tablet) {
+            width: 40%;
+        }
+
+        &:first-child {
+            margin-bottom: 30px;
+
+            @media (min-width: $small-tablet) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__item {}
+
+    &__heading {
+        font-size: 32px;
+        font-weight: 700;
+        color: $font-color-2;
+        margin-bottom: 15px;
+    }
+    
+    &__school-container {
+        background-color: $box-bg;
+        border: 1px solid $box-border;
+        padding: 30px 15px;
+        border-radius: 10px;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 500;
+        color: $font-color-1;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    &__address {
+        font-size: 11px;
+        font-weight: 700;
+        color: $font-color-2;
+    }
+}

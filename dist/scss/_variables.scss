@@ -1,6 +1,7 @@
 // Colors
 $primary-color: rgba(12, 102, 255, 1);
-$font-color: rgba(255, 255, 255, 1);
+$font-color-1: rgba(255, 255, 255, 1);
+$font-color-2: rgba(192, 204, 218, 1);
 $bg-color-1: rgba(28, 41, 56, 1);
 $bg-color-2: rgba(31, 45, 61, 1);
 $box-bg: rgba(37, 54, 73, 1);
@@ -10,6 +11,7 @@ $box-border: rgba(44, 64, 86, 1);
 $font-family-1: 'Poppins', sans-serif;
 
 // Breakpoints
+$small-mobile: 360px;
 $mobile: 576px;
 $small-tablet: 768px;
 $large-tablet: 992px;

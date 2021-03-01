@@ -1,0 +1,24 @@
+.skills {
+    background: $bg-color-2;
+    padding: 70px 0;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    &__box {
+        padding: 0 15px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {}
+
+    &__img {}
+
+}

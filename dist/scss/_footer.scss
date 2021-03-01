@@ -1,0 +1,44 @@
+.footer {
+    background-color: $bg-color-2;
+    padding: 50px 0 40px;
+    border-top: 1px solid $box-border;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 11px 12px;
+        background-color: $bg-color-1;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        img {
+            max-width: 16px;
+            max-height: 16px;
+        }
+
+        &:hover {
+            background-color: $box-border;
+        }
+    }
+
+    &__credits {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,81 @@
+.header {
+    background-color: $bg-color-1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    padding: 26px 0;
+    transition: all 0.3s ease;
+
+    &.header--scroll {
+        box-shadow: 0 1px 10px rgba(5, 16, 32, 1);
+        padding: 16px 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        &__logo {
+            font-size: 32px;
+            color: $primary-color;
+            font-weight: 700;
+
+            .logo-dot {
+                color: $font-color-1;
+            }
+        }
+
+        &__hamburger {
+
+            @media (min-width: $small-tablet) {
+                display: none;
+            }
+        }
+
+        &__line {
+            display: block;
+            width: 35px;
+            height: 4px;
+            background: $font-color-1;
+
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+
+        &__menu {
+            display: none;
+            width: 100%;
+            
+            @media (min-width: $small-tablet) {
+                width: auto;
+                display: flex !important;
+            }
+
+            &.navmenu--show {
+                display: block;
+            }
+        }
+
+        &__item {
+            @media (min-width: $small-tablet) {
+                margin-left: 40px;
+            }
+        }
+
+        &__link {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            color: $font-color-1;
+            text-transform: capitalize;
+            padding: 10px 0;
+        }
+    }
+    
+}

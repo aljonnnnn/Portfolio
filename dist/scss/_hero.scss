@@ -1,0 +1,99 @@
+.hero {
+    position: relative;
+    background-color: $bg-color-1;
+    height: 100vh;
+
+    @media (min-width: $large-tablet) {
+        height: 600px;
+    }
+  
+    @media (min-width: $desktop) {
+        height: 100vh;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0 15px;
+        width: 100%;
+
+        @media (min-width: $small-tablet) {
+            max-width: 560px;
+        }
+    }
+
+    &__heading {
+        color: $font-color-1;
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @media (min-width: $small-tablet) {
+            font-size: 92px;
+        }
+    }
+
+    &__sub-heading {
+        display: block;
+        color: $font-color-2;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        letter-spacing: 0;
+
+        @media (min-width: $small-tablet) {
+            font-size: 40px;
+        }
+    }
+
+    &__paragraph {
+        color: $font-color-2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.75;
+        margin-bottom: 30px;
+
+        @media (min-width: $small-tablet) {
+            font-size: 20px;
+        }
+    }
+
+    &__social-icon {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 130px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+
+        @media (min-width: $small-tablet) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $bg-color-2;
+        margin: 0 15px;
+        transition: all 0.3s ease;
+
+        img {
+            max-width: 16px;
+            max-height: 16px;
+        }
+
+        &:hover {
+            background-color: $box-border;
+        }
+    }
+}
