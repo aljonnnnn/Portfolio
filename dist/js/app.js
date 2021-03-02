@@ -12,10 +12,12 @@ $(document).ready(function(){
 
     $('.nav__hamburger').click(function() {
         $('.nav__menu').toggleClass('navmenu--show');
+        $('.nav__hamburger').toggleClass('active');
     })
     
     $('.nav__link').click(function() {
         $('.nav__menu').removeClass('navmenu--show');
+        $('.nav__hamburger').removeClass('active');
     })
 
 });

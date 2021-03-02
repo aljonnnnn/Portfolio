@@ -24,7 +24,7 @@
             font-size: 32px;
             color: $primary-color;
             font-weight: 700;
-
+            line-height: 1;
             .logo-dot {
                 color: $font-color-1;
             }
@@ -35,6 +35,16 @@
             @media (min-width: $small-tablet) {
                 display: none;
             }
+
+            &.active .nav__line:nth-child(1){
+                transform: translateY(11px) rotate(-45deg);
+            }
+            &.active .nav__line:nth-child(2){
+                opacity: 0;
+            }
+            &.active .nav__line:nth-child(3){
+                transform: translateY(-11px) rotate(45deg);
+            }
         }
 
         &__line {
@@ -42,6 +52,7 @@
             width: 35px;
             height: 4px;
             background: $font-color-1;
+            transition: all 0.3s cubic-bezier(0.8, 0.2, 0.7, 1.3), width 0.2s 0.1s cubic-bezier(0.7, 0.2, 0.7, 1.4);
 
             &:not(:last-child) {
                 margin-bottom: 7px;
@@ -49,16 +60,22 @@
         }
 
         &__menu {
-            display: none;
-            width: 100%;
             
             @media (min-width: $small-tablet) {
                 width: auto;
                 display: flex !important;
             }
 
-            &.navmenu--show {
-                display: block;
+            @media (max-width: $mobile) {
+                overflow: hidden;
+                height: 0;
+                width: 100%;
+                transition: all 0.3s cubic-bezier(0.8, 0.2, 0.7, 1.3), width 0.2s 0.1s cubic-bezier(0.7, 0.2, 0.7, 1.4);
+
+                &.navmenu--show {
+                    padding-top: 10px;
+                    height: 235px;
+                }
             }
         }
 

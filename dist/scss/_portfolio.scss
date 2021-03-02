@@ -61,7 +61,6 @@
 
     }
     &__img {
-        margin-bottom: 25px;
         transition: all 0.3s ease;
     }
 
@@ -71,6 +70,7 @@
         font-weight: 500;
         color: $font-color-1;
         text-transform: capitalize;
+        margin-top: 25px;
         margin-bottom: 15px;
     }
     
@@ -86,9 +86,7 @@
         }
     }
 
-    &__tech {
-        margin-bottom: 15px;
-    }
+    &__tech {}
 
     &__tech-use {
         display: inline-block;
@@ -97,6 +95,7 @@
         text-transform: uppercase;
         background-color: $bg-color-1;
         margin-right: 10px;
+        margin-bottom: 15px;
     }
 
     &__project-link {}
