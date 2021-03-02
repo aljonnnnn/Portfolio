@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    $(function(){
+        $.scrollIt({
+            topOffset: -30,
+            scrollTime: 600
+        });
+    });
+
     $(window).scroll(function() {    
         const scroll = $(window).scrollTop();
         // console.log(scroll);

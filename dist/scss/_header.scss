@@ -92,6 +92,10 @@
             color: $font-color-1;
             text-transform: capitalize;
             padding: 10px 0;
+
+            &.active {
+                color: $primary-color;
+            }
         }
     }
     

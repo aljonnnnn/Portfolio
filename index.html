@@ -12,7 +12,7 @@
     <!-- header -->
     <header class="header">
         <nav class="nav container">
-            <a href="" class="nav__logo">ADL<span class="logo-dot">.</span></a>
+            <a href="#" class="nav__logo" data-scroll-goto="0">ADL<span class="logo-dot">.</span></a>
             <div class="nav__hamburger">
                 <span class="nav__line"></span>
                 <span class="nav__line"></span>
@@ -20,19 +20,19 @@
             </div>
             <ul class="nav__menu">
                 <li class="nav__item">
-                    <a href="#hero" class="nav__link">home</a>
+                    <a href="#" class="nav__link active" data-scroll-nav="0">home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#about" class="nav__link">about</a>
+                    <a href="#" class="nav__link" data-scroll-nav="1">about</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#skills" class="nav__link">skills</a>
+                    <a href="#" class="nav__link" data-scroll-nav="2">skills</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#portfolio" class="nav__link">portfolio</a>
+                    <a href="#" class="nav__link" data-scroll-nav="3">portfolio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#contact" class="nav__link">contact</a>
+                    <a href="#" class="nav__link" data-scroll-nav="4">contact</a>
                 </li>
             </ul>
         </nav>
@@ -40,13 +40,13 @@
     <!-- main -->
     <main>
     <!-- hero section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" data-scroll-index="0">
         <div class="hero__text">
             <h1 class="hero__heading">i am Aljon
                 <span class="hero__sub-heading">frontend web developer</span>
             </h1>
             <p class="hero__paragraph">I am a Front-end Developer who also likes to play around with UI/UX and Back-end</p>
-            <a href="#" class="btn btn-primary">know more</a>
+            <a href="#" class="btn btn-primary" data-scroll-goto="1">know more</a>
         </div>
         <div class="hero__social-icon">
             <a href="https://www.facebook.com/turjonnnnnnnnnn" target="_blank" class="hero__icon"><img src="dist/img/contact-icon-facebook.svg" alt=""></a>
@@ -57,7 +57,7 @@
     </section>
 
     <!-- about section -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-scroll-index="1">
         <div class="container">
             <h2 class="section-heading">about me</h2>
             <div class="about__flex">
@@ -75,7 +75,7 @@
                         <p class="about__paragraph">I like to develop any kind of project. Seeking Internship.</p>
                         <p class="about__paragraph">I am interested in exploring the fields of Software Engineering and Web Development. Feel free to reach me directly at delumenaljon@gmail.com.</p>
                         <a href="#" class="btn btn-primary">resume</a>
-                        <a href="#" class="btn btn-secondary">portfolio</a>
+                        <a href="#" class="btn btn-secondary" data-scroll-goto="3">portfolio</a>
                     </div>
                 </div>
             </div>
@@ -109,9 +109,9 @@
         </div>
     </section>
     <!-- skills section -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" data-scroll-index="2">
         <div class="container">
-            <h2 class="section-heading">skills</h2>
+            <h2 class="section-heading">my backpack</h2>
             <div class="skills__flex">
                 <div class="skills__box">
                     <div class="skills__item">
@@ -177,7 +177,7 @@
         </div>
     </section>
     <!-- portfolio section -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" data-scroll-index="3">
         <div class="container">
             <h2 class="section-heading">portfolio</h2>
             <div class="portfolio__flex">
@@ -256,7 +256,7 @@
         </div>
     </section>
     <!-- contact section -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-scroll-index="4">
         <div class="container">
             <h2 class="section-heading">contact</h2>
             <div class="contact__flex">
@@ -283,15 +283,18 @@
             <div class="footer__flex">
                 <a href="mailto:delumenaljon@gmail.com" target="_blank" class="footer__icon"><img src="dist/img/contact-email-icon.svg" alt=""></a>
                 <a href="https://github.com/aljonnnnn" target="_blank" class="footer__icon"><img src="dist/img/contact-icon-github.svg" alt=""></a>
-                <a href="https://portfolio-aljonnnnn.vercel.app/" target="_blank" class="footer__icon"><img src="dist/img/contact-web-icon.svg" alt=""></a>
+                <a href="https://portfolio-aljonnnnn.vercel.app/" class="footer__icon"><img src="dist/img/contact-web-icon.svg" alt=""></a>
                 <a href="https://www.facebook.com/turjonnnnnnnnnn" target="_blank" class="footer__icon"><img src="dist/img/contact-icon-facebook.svg" alt=""></a>
                 <a href="https://twitter.com/wTurj" target="_blank" class="footer__icon"><img src="dist/img/contact-icon-twitter.svg" alt=""></a>
             </div>
             <span class="footer__credits">© Aljon De Lumen</span>
         </div>
     </footer>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollit js -->
+    <script src="dist/js/scrollIt.min.js"></script>
     <!-- main script -->
     <script src="dist/js/app.js"></script>
 </body>
