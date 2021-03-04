@@ -1,23 +1,23 @@
 .about {
     background: $bg-color-1;
-    padding: 70px 0;
+    padding: 4.375rem 0;
 
     &__flex {
         display: flex;
         justify-content: space-between;
         // align-items: center;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: -0.9375rem;
+        margin-left: -0.9375rem;
     }
 
     &__box {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
 
         &:first-child {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
 
             @media (min-width: $small-tablet) {
                 margin-bottom: 0;
@@ -44,34 +44,34 @@
     &__item {}
 
     &__img {
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
 
     &__heading {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: $font-color-1;
         font-weight: 600;
         text-transform: capitalize;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
 
         @media (min-width: $large-tablet) {
-            font-size: 32px;
+            font-size: 2rem;
         }
     }
 
     &__paragraph {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         color: $font-color-2;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
 
         @media (min-width: $large-tablet) {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
     .btn-primary {
-        margin-right: 20px;
+        margin-right: 1.25rem;
         
         @media (max-width: $small-mobile) {
             margin-right: 5px;

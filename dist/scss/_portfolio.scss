@@ -1,22 +1,22 @@
 .portfolio {
     background: $bg-color-1;
-    padding: 70px 0;
+    padding: 4.375rem 0;
 
     &__flex {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
     }
 
     &__box {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
         
         &:not(:last-child) {
-            margin-bottom: 70px;
+            margin-bottom: 4.375rem;
         }
 
         @media (min-width: $small-tablet) {
@@ -30,8 +30,8 @@
     &__item {
         background-color: $box-bg;
         border: 1px solid $box-border;
-        border-radius: 4px;
-        padding: 25px;
+        border-radius: 0.25rem;
+        padding: 1.5625rem;
    
     }
 
@@ -66,23 +66,23 @@
 
     
     &__title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: $font-color-1;
         text-transform: capitalize;
-        margin-top: 25px;
-        margin-bottom: 15px;
+        margin-top: 1.5625rem;
+        margin-bottom: 0.9375rem;
     }
     
 
     &__details {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         color: $font-color-2;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
 
         @media (min-width: $large-tablet) {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
@@ -90,12 +90,12 @@
 
     &__tech-use {
         display: inline-block;
-        padding: 5px 10px;
-        font-size: 10px;
+        padding: 0.3125rem 0.625rem;
+        font-size: 0.625rem;
         text-transform: uppercase;
         background-color: $bg-color-1;
-        margin-right: 10px;
-        margin-bottom: 15px;
+        margin-right: 0.625rem;
+        margin-bottom: 0.9375rem;
     }
 
     &__project-link {}
@@ -103,11 +103,11 @@
     &__link {
         position: relative;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 0.625rem;
 
         img {
-            height: 25px;
-            width: 25px;
+            height: 1.5625rem;
+            width: 1.5625rem;
             
         }
         
