@@ -15,7 +15,7 @@
     }
 
     &__box {
-        width: 100%;
+        width: 80%;
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
 
@@ -23,9 +23,14 @@
             margin-bottom: 1.875rem;
         }
 
-        @media (min-width: $small-tablet) {
+        @media (min-width: $mobile) {
+            width: 50%;
+            padding: 0 1.875rem;
+
+        }
+        @media (min-width: $large-tablet) {
             width: 32.98245614035088%;
-             padding: 0 1.875rem;
+            padding: 0 1.875rem;
 
         }
     }
