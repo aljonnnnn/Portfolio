@@ -32,7 +32,7 @@
 
         &__hamburger {
 
-            @media (min-width: $small-tablet) {
+            @media (min-width: $mobile) {
                 display: none;
             }
 
@@ -61,7 +61,7 @@
 
         &__menu {
             
-            @media (min-width: $small-tablet) {
+            @media (min-width: $mobile) {
                 width: auto;
                 display: flex !important;
             }
@@ -80,7 +80,7 @@
         }
 
         &__item {
-            @media (min-width: $small-tablet) {
+            @media (min-width: $mobile) {
                 margin-left: 40px;
             }
         }
@@ -98,5 +98,4 @@
             }
         }
     }
-    
 }

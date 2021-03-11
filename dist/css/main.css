@@ -143,7 +143,7 @@ img {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .header .nav__hamburger {
     display: none;
   }
@@ -176,7 +176,7 @@ img {
   margin-bottom: 0.4375rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .header .nav__menu {
     width: auto;
     display: -webkit-box !important;
@@ -199,7 +199,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .header .nav__item {
     margin-left: 40px;
   }
@@ -601,6 +601,7 @@ img {
 }
 
 .portfolio__img {
+  max-height: 230px !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
