@@ -16,17 +16,17 @@
         padding-right: 0.9375rem;
         width: 100%;
 
-        @media (min-width: $small-tablet) {
+        @media (min-width: $medium) {
             width: 50%;
         }
-        @media (min-width: $large-tablet) {
+        @media (min-width: $large) {
             width: 40%;
         }
 
         &:first-child {
             margin-bottom: 1.875rem;
 
-            @media (min-width: $small-tablet) {
+            @media (min-width: $medium) {
                 margin-bottom: 0;
             }
         }

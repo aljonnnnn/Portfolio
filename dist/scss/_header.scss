@@ -32,7 +32,7 @@
 
         &__hamburger {
 
-            @media (min-width: $mobile) {
+            @media (min-width: $small) {
                 display: none;
             }
 
@@ -61,12 +61,12 @@
 
         &__menu {
             
-            @media (min-width: $mobile) {
+            @media (min-width: $small) {
                 width: auto;
                 display: flex !important;
             }
 
-            @media (max-width: $mobile) {
+            @media (max-width: $small) {
                 overflow: hidden;
                 height: 0;
                 width: 100%;
@@ -80,7 +80,7 @@
         }
 
         &__item {
-            @media (min-width: $mobile) {
+            @media (min-width: $small) {
                 margin-left: 40px;
             }
         }

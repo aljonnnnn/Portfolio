@@ -23,15 +23,14 @@
             margin-bottom: 1.875rem;
         }
 
-        @media (min-width: $mobile) {
+        @media (min-width: $small) {
             width: 50%;
             padding: 0 1.875rem;
-
         }
-        @media (min-width: $large-tablet) {
+        
+        @media (min-width: $large) {
             width: 32.98245614035088%;
             padding: 0 1.875rem;
-
         }
     }
 

@@ -42,7 +42,7 @@ img {
     text-transform: uppercase;
     text-align: center;
 
-    @media (max-width: $small-mobile) {
+    @media (max-width: $small) {
         width: 8.75rem;
         padding: 0.625rem 0.9375rem;
     }
@@ -81,11 +81,11 @@ img {
     margin-right: auto;
     padding: 0 0.9375rem;
 
-    @media (min-width: $small-tablet) {
+    @media (min-width: $medium) {
         max-width: 960px;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $xlarge) {
         max-width: 71.25rem;
     }
 }
@@ -98,7 +98,7 @@ img {
     text-align: center;
     margin-bottom: 3.75rem;
 
-    @media (min-width: $large-tablet) {
+    @media (min-width: $large) {
         text-align: left;
     }
 }
