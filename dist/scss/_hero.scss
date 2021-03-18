@@ -91,13 +91,21 @@
         margin: 0 15px;
         transition: all 0.3s ease;
 
+        &-fill {
+            transition: all 0.3s ease;
+        }
+
+        &:hover &-fill {
+            fill: $bg-color-1;
+        }
+
         img {
             max-width: 16px;
             max-height: 16px;
         }
 
         &:hover {
-            background-color: $box-border;
+            background-color: $primary-color;
         }
     }
 }

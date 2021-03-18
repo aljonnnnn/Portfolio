@@ -23,13 +23,16 @@
             margin-right: 0.9375rem;
         }
 
-        img {
-            max-width: 1rem;
-            max-height: 1rem;
+        &-fill {
+            transition: all 0.3s ease;
+        }
+
+        &:hover &-fill {
+            fill: $bg-color-1;
         }
 
         &:hover {
-            background-color: $box-border;
+            background-color: $primary-color;
         }
     }
 

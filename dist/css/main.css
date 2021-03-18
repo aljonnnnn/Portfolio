@@ -226,6 +226,10 @@ img {
   padding: 10px 0;
 }
 
+.header .nav__link:hover {
+  color: #0c66ff;
+}
+
 .header .nav__link.active {
   color: #0c66ff;
 }
@@ -348,13 +352,22 @@ img {
   transition: all 0.3s ease;
 }
 
+.hero__icon-fill {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero__icon:hover .hero__icon-fill {
+  fill: #1c2938;
+}
+
 .hero__icon img {
   max-width: 16px;
   max-height: 16px;
 }
 
 .hero__icon:hover {
-  background-color: #2c4056;
+  background-color: #0c66ff;
 }
 
 .about {
@@ -790,13 +803,17 @@ img {
   margin-right: 0.9375rem;
 }
 
-.footer__icon img {
-  max-width: 1rem;
-  max-height: 1rem;
+.footer__icon-fill {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__icon:hover .footer__icon-fill {
+  fill: #1c2938;
 }
 
 .footer__icon:hover {
-  background-color: #2c4056;
+  background-color: #0c66ff;
 }
 
 .footer__credits {
