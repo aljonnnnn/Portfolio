@@ -1,0 +1,63 @@
+.education {
+    background-color: $bg-color-2;
+    padding: 4.375rem 0;
+
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
+    }
+
+    &__box {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 100%;
+
+        @media (min-width: $medium) {
+            width: 50%;
+        }
+        @media (min-width: $large) {
+            width: 40%;
+        }
+
+        &:first-child {
+            margin-bottom: 1.875rem;
+
+            @media (min-width: $medium) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__item {}
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $font-color-2;
+        margin-bottom: 0.9375rem;
+    }
+    
+    &__school-container {
+        background-color: $box-bg;
+        border: 1px solid $box-border;
+        padding: 1.875rem 0.9375rem;
+        border-radius: 0.625rem;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $font-color-1;
+        margin-bottom: 0.9375rem;
+        text-transform: capitalize;
+    }
+
+    &__address {
+        font-size: 0.6875rem;
+        font-weight: 700;
+        color: $font-color-2;
+    }
+}
