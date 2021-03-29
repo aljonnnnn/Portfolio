@@ -112,6 +112,19 @@ img {
   }
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c4056;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c2938;
+}
+
 .header {
   background-color: #1c2938;
   position: fixed;

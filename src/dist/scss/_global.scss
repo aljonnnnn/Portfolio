@@ -102,3 +102,17 @@ img {
         text-align: left;
     }
 }
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $box-border;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg-color-1;
+}

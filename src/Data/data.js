@@ -125,12 +125,17 @@ export const portfolioData = {
             techUse: ['html', 'css', 'javascript'],
 
             
-            webLink: 'https://my-restaurant-template-git-main.aljonnnnn.vercel.app/',
-            githubLink: 'https://github.com/aljonnnnn/my-restaurant-template',
-            figmaLink: 'https://www.figma.com/file/qnl6eD5MLnmRxEOrQIAghJ/Restaurant-Template?node-id=0%3A1',
-            webIcon: iconProjecWeb,
-            githubIcon: iconProjectGithub,
-            figmaIcon: iconProjectFigma,
+            iconLinks: [
+                'https://my-restaurant-template-git-main.aljonnnnn.vercel.app/',
+                'https://github.com/aljonnnnn/my-restaurant-template',
+                'https://www.figma.com/file/qnl6eD5MLnmRxEOrQIAghJ/Restaurant-Template?node-id=0%3A1',
+            ],
+
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+                iconProjectFigma,
+            ]
         },
         
         {
@@ -144,10 +149,18 @@ export const portfolioData = {
             webLink: 'https://halaka-bootstrap-template.aljonnnnn.vercel.app/',
             githubLink: 'https://github.com/aljonnnnn/halaka-bootstrap-template',
             figmaLink: 'https://www.figma.com/file/3CoJNJBPeGlZnvbxfZntep/Bootstrap-Template?node-id=0%3A1',
+
+            iconLinks: [
+                'https://halaka-bootstrap-template.aljonnnnn.vercel.app/',
+                'https://github.com/aljonnnnn/halaka-bootstrap-template',
+                'https://www.figma.com/file/3CoJNJBPeGlZnvbxfZntep/Bootstrap-Template?node-id=0%3A1',
+            ],
            
-            webIcon: iconProjecWeb,
-            githubIcon: iconProjectGithub,
-            figmaIcon: iconProjectFigma,
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+                iconProjectFigma,
+            ]
         },
         
         {
@@ -157,14 +170,15 @@ export const portfolioData = {
             projectImg: whoPay,
             techUse: ['html', 'scss', 'javascript'],
 
-            
-            webLink: 'https://who-pay-aljonnnnn.vercel.app/',
-            githubLink: 'https://github.com/aljonnnnn/who-pay',
-            figmaLink: null,
+            iconLinks: [
+                'https://who-pay-aljonnnnn.vercel.app/',
+                'https://github.com/aljonnnnn/who-pay',
+            ],
            
-            webIcon: iconProjecWeb,
-            githubIcon: iconProjectGithub,
-            figmaIcon: iconProjectFigma,
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+            ]
         },
         
         {
@@ -174,14 +188,15 @@ export const portfolioData = {
             projectImg: todoList,
             techUse: ['html', 'scss', 'javascript'],
 
-            
-            webLink: 'https://my-to-do-blush.vercel.app/',
-            githubLink: 'https://github.com/aljonnnnn/my-to-do',
-            figmaLink: null,
-           
-            webIcon: iconProjecWeb,
-            githubIcon: iconProjectGithub,
-            figmaIcon: iconProjectFigma,
+            iconLinks: [
+                'https://my-to-do-blush.vercel.app/',
+                'https://github.com/aljonnnnn/my-to-do',
+            ],
+
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+            ]
         },
         
         {
@@ -195,10 +210,18 @@ export const portfolioData = {
             webLink: 'https://delumenaljon-portfolio.vercel.app/',
             githubLink: 'https://github.com/aljonnnnn/Portfolio',
             figmaLink: 'https://www.figma.com/file/Bu61EPDaogz7mE86CQqAxS/Portfolio?node-id=0%3A1',
-           
-            webIcon: iconProjecWeb,
-            githubIcon: iconProjectGithub,
-            figmaIcon: iconProjectFigma,
+
+            iconLinks: [
+                'https://delumenaljon-portfolio.vercel.app/',
+                'https://github.com/aljonnnnn/Portfolio',
+                'https://www.figma.com/file/Bu61EPDaogz7mE86CQqAxS/Portfolio?node-id=0%3A1',
+            ],
+
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+                iconProjectFigma,
+            ]
         },
     ]
 }
