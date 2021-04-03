@@ -6,13 +6,16 @@ import css from '../dist/img/css.svg'
 import javascript from '../dist/img/js.svg'
 import bootstrap from '../dist/img/bootstrap.svg'
 import sass from '../dist/img/sass.svg'
+import react from '../dist/img/react.svg'
 import jquery from '../dist/img/jquery.svg'
+import wordpress from '../dist/img/wordpress.svg'
 import figma from '../dist/img/figma.svg'
 import git from '../dist/img/git.svg'
 import github from '../dist/img/github.svg'
 import vscode from '../dist/img/vscode.svg'
 import npm from '../dist/img/npm.svg'
 import command from '../dist/img/command.svg'
+import stackoverflow from '../dist/img/stackoverflow.svg'
 
 
 // Portfolio 
@@ -58,7 +61,7 @@ export const headerLinks = [
 export const heroData = {
     heading: 'i am aljon',
     subHeading: 'frontend web developer',
-    paragraph: 'I am a Front-end Developer who also likes to play around with UI/UX and Back-end',
+    paragraph: 'I am a Front-end Developer who also likes to play around with UI/UX',
 }
 
 export const aboutData = {
@@ -70,7 +73,6 @@ export const aboutData = {
         'I am currently taking a Bachelor of Computer Science from the AMA Computer College East Rizal Campus.',
         'I like to create projects and put them on Github.',
         'I love building websites and am always looking forward to improving my skills.',
-        '',
         'I like to develop any kind of project. Seeking Internship.',
         'I am interested in exploring the fields of Software Engineering and Web Development. Feel free to reach me directly at delumenaljon@gmail.com.',
     ],
@@ -104,13 +106,16 @@ export const skillsData = [
     javascript,
     bootstrap,
     sass,
+    react,
     jquery,
+    npm,
     figma,
     git,
     github,
     vscode,
-    npm,
+    wordpress,
     command,
+    stackoverflow
 ]
 
 export const portfolioData = {
@@ -119,7 +124,7 @@ export const portfolioData = {
     projects: [
         {
             projectName: 'restaurant template',
-            projectDetail: 'My resturant template is a simple static website built without any additional frameworks. My css is inspired  by bootstrap framework.',
+            projectDetail: 'My restaurant template is a simple static website built without any additional frameworks. My css is inspired  by bootstrap framework.',
             projectLink: 'https://my-restaurant-template-git-main.aljonnnnn.vercel.app/',
             projectImg: restaurant,
             techUse: ['html', 'css', 'javascript'],

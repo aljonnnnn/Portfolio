@@ -1,8 +1,11 @@
 import React from 'react'
 import Button from '../components/Button'
 import {aboutData} from '../Data/data'
+import {ScrollTopHandler} from '../Script/ScrollTopHandler'
+// import resume from '../dist/pdf/resume.pdf'
 
 const AboutMe = () => {
+
     return (
         <div className="about" id="about">
                 <div className="container">
@@ -17,14 +20,31 @@ const AboutMe = () => {
                             <div className="about__item">
                                 <h3 className="about__heading">{aboutData.heading}</h3>
         
-                                {aboutData.paragraphs.map((paragraph, key) => {
+                                {aboutData.paragraphs.map((paragraph, index) => {
                                     return (
-                                        <p className="about__paragraph" key={key}>{paragraph}</p>
+                                        <p className="about__paragraph" key={index}>{paragraph}</p>
                                     )
                                 })}
 
-                                <Button href='resume.pdf' className='btn btn-primary' text='resume'/>    
-                                <Button href='/portfolio' className='btn btn-secondary' text='portfolio'/>
+                                {/* <Button 
+                                    href='resume.pdf' 
+                                    className='btn btn-primary' 
+                                    text='resume'
+                                    clicked={ScrollTopHandler}
+                                />     */}
+
+                                <a 
+                                    href='resume.pdf' 
+                                    className='btn btn-primary'>
+                                    resume
+                                </a>
+
+                                <Button 
+                                    href='/portfolio' 
+                                    className='btn btn-secondary' 
+                                    text='portfolio'
+                                    clicked={ScrollTopHandler}
+                                />
                             </div>
                         </div>
                     </div>

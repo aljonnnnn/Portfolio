@@ -9,9 +9,9 @@ const Education = () => {
                     <h2 className="section-heading">{educationData.title}</h2>
                     <div className="education__flex">
                         
-                        {educationData.schools.map((school, key) => {
+                        {educationData.schools.map((school, index) => {
                             return (
-                                <div className="education__box" key={key}>
+                                <div className="education__box" key={index}>
                                     <div className="education__item">
                                         <h3 className="education__heading">{school.year}</h3>
                                         <div className="education__school-container">

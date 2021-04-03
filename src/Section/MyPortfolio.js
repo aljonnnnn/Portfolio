@@ -8,9 +8,9 @@ const MyPortfolio = () => {
                 <h2 className="section-heading">{portfolioData.title}</h2>
                 <div className="portfolio__flex">
 
-                    {portfolioData.projects.slice(0).reverse().map((project, key) => {
+                    {portfolioData.projects.slice(0).reverse().map((project, index) => {
                         return (
-                            <div className="portfolio__box" key={key}>
+                            <div className="portfolio__box" key={index}>
                                 <div className="portfolio__item">
                                     <a href={project.projectLink} target="_blank" rel="noreferrer" className="portfolio__imgLink"><img src={project.projectImg} alt="" className="portfolio__img" /></a>
                                     <h3 className="portfolio__title">{project.projectName}</h3>

@@ -7,9 +7,9 @@ const Skills = () => {
                 <div className="container">
                     <h2 className="section-heading">my backpack</h2>
                     <div className="skills__flex">
-                        {skillsData.map((skillImg, key) => {
+                        {skillsData.map((skillImg, index) => {
                             return (
-                                <div className="skills__box" key={key}>
+                                <div className="skills__box" key={index}>
                                     <div className="skills__item">
                                         <img src={skillImg} alt="" className="skills__img" />
                                     </div>

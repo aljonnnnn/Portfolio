@@ -17,7 +17,7 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             setScroll(window.scrollY > 10)
-        })
+        },[])
     })
 
 
@@ -40,9 +40,9 @@ const Header = () => {
                     <span className="nav__line"></span>
                 </div>
                 <ul className={`nav__menu ${toggleNav === true ? 'navmenu--show' : ''}`}>
-                    {headerLinks.map((headerLink, key) => {
+                    {headerLinks.map((headerLink, index) => {
                         return (
-                            <li className="nav__item" key={key}>
+                            <li className="nav__item" key={index}>
                                 <NavLink exact to={headerLink.path}  activeClassName='active' className={`nav__link ${'awit' === headerLink ? 'active' : ''}`} onClick={navLinkHandlerFalse} >{headerLink.text}</NavLink>
                             </li>
                         )
