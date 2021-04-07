@@ -1,5 +1,10 @@
 import aboutImg from '../dist/img/me.png'
 
+//  Contact
+import emailIcon from '../dist/img/contact-email-icon.svg'
+import phonelIcon from '../dist/img/contact-phone-icon.svg'
+
+
 // Skills 
 import html from '../dist/img/html.svg'
 import css from '../dist/img/css.svg'
@@ -30,11 +35,6 @@ import iconProjectGithub from '../dist/img/github-project-link.svg'
 import iconProjectFigma from '../dist/img/figma-project-link.svg'
 
 
-//  Contact
-import emailIcon from '../dist/img/contact-email-icon.svg'
-import phonelIcon from '../dist/img/contact-phone-icon.svg'
-
-
 export const headerLinks = [
     {
         path: '/',
@@ -58,6 +58,20 @@ export const headerLinks = [
     },
 ]
 
+
+// contact section
+export const contactData = {
+    title: 'contact',
+    emailIcon: emailIcon,
+    emailAccount: 'delumenaljon@gmail.com',
+
+    phoneIcon: phonelIcon,
+    phoneNumber: '0907-345-9009'
+
+}
+
+
+// Hero Sectopm
 export const heroData = {
     heading: 'i am aljon',
     subHeading: 'frontend web developer',
@@ -80,6 +94,7 @@ export const aboutData = {
 
 }
 
+// Education section
 export const educationData = {
     title: 'education',
 
@@ -99,7 +114,7 @@ export const educationData = {
 }
 
 
-
+// skills section
 export const skillsData = [
     html,
     css,
@@ -118,6 +133,7 @@ export const skillsData = [
     stackoverflow
 ]
 
+// portfolio section
 export const portfolioData = {
     title: 'portfolio',
 
@@ -146,7 +162,7 @@ export const portfolioData = {
         {
             projectName: 'Halaka Bootstrap Template',
             projectDetail: 'Halaka is inspired by Arsha bootstrap template.  It was a great experience for me to build using bootstrap, aos animate and scrollit js.',
-            projectLink: 'https://my-restaurant-template-git-main.aljonnnnn.vercel.app/',
+            projectLink: 'https://halaka-bootstrap-template-aljonnnnn.vercel.app/',
             projectImg: halaka,
             techUse: ['html', 'css', 'javascript', 'bootstrap'],
 
@@ -231,12 +247,3 @@ export const portfolioData = {
     ]
 }
 
-export const contactData = {
-    title: 'contact',
-    emailIcon: emailIcon,
-    emailAccount: 'delumenaljon@gmail.com',
-
-    phoneIcon: phonelIcon,
-    phoneNumber: '0907-345-9009'
-
-}
