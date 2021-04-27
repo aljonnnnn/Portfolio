@@ -29,6 +29,7 @@ import halaka from '../dist/img/halaka-bootstrap-template.png'
 import whoPay from '../dist/img/who-pay.png'
 import todoList from '../dist/img/todo-list.png'
 import myPortfolio from '../dist/img/my-portfolio.png'
+import coronaOyy from '../dist/img/coronaOyy.png'
 
 import iconProjecWeb from '../dist/img/web-project-link.svg'
 import iconProjectGithub from '../dist/img/github-project-link.svg'
@@ -185,24 +186,6 @@ export const portfolioData = {
         },
         
         {
-            projectName: 'who pay',
-            projectDetail: 'Who pay application is you can add name and click who pay button then display the unlucky name who gonna pay the bill.',
-            projectLink: 'https://who-pay-aljonnnnn.vercel.app/',
-            projectImg: whoPay,
-            techUse: ['html', 'scss', 'javascript'],
-
-            iconLinks: [
-                'https://who-pay-aljonnnnn.vercel.app/',
-                'https://github.com/aljonnnnn/who-pay',
-            ],
-           
-            iconImgs: [
-                iconProjecWeb,
-                iconProjectGithub,
-            ]
-        },
-        
-        {
             projectName: 'to-do list',
             projectDetail: 'Todo List application that you can list your task today. This project was a great experience for me to enhance my HTML Dom manipulation.',
             projectLink: 'https://my-to-do-blush.vercel.app/',
@@ -214,6 +197,24 @@ export const portfolioData = {
                 'https://github.com/aljonnnnn/my-to-do',
             ],
 
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+            ]
+        },
+
+        {
+            projectName: 'who pay',
+            projectDetail: 'Who pay application is you can add name and click who pay button then display the unlucky name who gonna pay the bill.',
+            projectLink: 'https://who-pay-aljonnnnn.vercel.app/',
+            projectImg: whoPay,
+            techUse: ['html', 'scss', 'react js'],
+
+            iconLinks: [
+                'https://who-pay-aljonnnnn.vercel.app/',
+                'https://github.com/aljonnnnn/who-pay',
+            ],
+           
             iconImgs: [
                 iconProjecWeb,
                 iconProjectGithub,
@@ -236,6 +237,30 @@ export const portfolioData = {
                 'https://delumenaljon-portfolio.vercel.app/',
                 'https://github.com/aljonnnnn/Portfolio',
                 'https://www.figma.com/file/Bu61EPDaogz7mE86CQqAxS/Portfolio?node-id=0%3A1',
+            ],
+
+            iconImgs: [
+                iconProjecWeb,
+                iconProjectGithub,
+                iconProjectFigma,
+            ]
+        },
+        {
+            projectName: 'CoronaOyy',
+            projectDetail: 'CoronaOyy is a web application that tracks the current Covid-19 cases all over the globe. Great practice for fetch api',
+            projectLink: 'https://covidoyy.vercel.app/',
+            projectImg: coronaOyy,
+            techUse: ['react js', 'scss', 'web api', 'framer motion'],
+
+            
+            webLink: 'https://covidoyy.vercel.app/',
+            githubLink: 'https://github.com/aljonnnnn/coronaoyy',
+            figmaLink: 'https://www.figma.com/file/tztxAoWedvcgnQyKfoy8UQ/CoronaOyy?node-id=0%3A1',
+
+            iconLinks: [
+                'https://covidoyy.vercel.app/',
+                'https://github.com/aljonnnnn/coronaoyy',
+                'https://www.figma.com/file/tztxAoWedvcgnQyKfoy8UQ/CoronaOyy?node-id=0%3A1',
             ],
 
             iconImgs: [
