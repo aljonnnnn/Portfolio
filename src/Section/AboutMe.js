@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from '../components/Button'
 import {aboutData} from '../Data/data'
-import {ScrollTopHandler} from '../Script/ScrollTopHandler'
-// import resume from '../dist/pdf/resume.pdf'
+import {ScrollTopHandler} from '../handler/ScrollTopHandler'
+import resume from '../dist/img/me.png'
+
 
 const AboutMe = () => {
 
@@ -34,7 +35,7 @@ const AboutMe = () => {
                                 />     */}
 
                                 <a 
-                                    href='resume.pdf' 
+                                    href={resume} 
                                     className='btn btn-primary'>
                                     resume
                                 </a>
