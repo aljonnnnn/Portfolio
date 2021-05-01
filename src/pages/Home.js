@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../Section/Hero'
+import Hero from '../containers/Home/Hero'
 
 const Home = () => {
     

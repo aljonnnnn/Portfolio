@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../components/Button'
-import {heroData} from '../Data/data'
-import {ScrollTopHandler} from '../handler/ScrollTopHandler'
+import Button from '../../components/Button/Button'
+import {heroData} from '../../Data/data'
+import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
 
 const Hero = () => {
     

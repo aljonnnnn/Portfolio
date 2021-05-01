@@ -1,39 +1,39 @@
-import aboutImg from '../dist/img/me.png'
+import aboutImg from '../assets/img/me.png'
 
 //  Contact
-import emailIcon from '../dist/img/contact-email-icon.svg'
-import phonelIcon from '../dist/img/contact-phone-icon.svg'
+import emailIcon from '../assets/img/contact-email-icon.svg'
+import phonelIcon from '../assets/img/contact-phone-icon.svg'
 
 
 // Skills 
-import html from '../dist/img/html.svg'
-import css from '../dist/img/css.svg'
-import javascript from '../dist/img/js.svg'
-import bootstrap from '../dist/img/bootstrap.svg'
-import sass from '../dist/img/sass.svg'
-import react from '../dist/img/react.svg'
-import jquery from '../dist/img/jquery.svg'
-import wordpress from '../dist/img/wordpress.svg'
-import figma from '../dist/img/figma.svg'
-import git from '../dist/img/git.svg'
-import github from '../dist/img/github.svg'
-import vscode from '../dist/img/vscode.svg'
-import npm from '../dist/img/npm.svg'
-import command from '../dist/img/command.svg'
-import stackoverflow from '../dist/img/stackoverflow.svg'
+import html from '../assets/img/html.svg'
+import css from '../assets/img/css.svg'
+import javascript from '../assets/img/js.svg'
+import bootstrap from '../assets/img/bootstrap.svg'
+import sass from '../assets/img/sass.svg'
+import react from '../assets/img/react.svg'
+import jquery from '../assets/img/jquery.svg'
+import wordpress from '../assets/img/wordpress.svg'
+import figma from '../assets/img/figma.svg'
+import git from '../assets/img/git.svg'
+import github from '../assets/img/github.svg'
+import vscode from '../assets/img/vscode.svg'
+import npm from '../assets/img/npm.svg'
+import command from '../assets/img/command.svg'
+import stackoverflow from '../assets/img/stackoverflow.svg'
 
 
 // Portfolio 
-import restaurant from '../dist/img/resturant-template.png'
-import halaka from '../dist/img/halaka-bootstrap-template.png'
-import whoPay from '../dist/img/who-pay.png'
-import todoList from '../dist/img/todo-list.png'
-import myPortfolio from '../dist/img/my-portfolio.png'
-import coronaOyy from '../dist/img/coronaOyy.png'
+import restaurant from '../assets/img/resturant-template.png'
+import halaka from '../assets/img/halaka-bootstrap-template.png'
+import whoPay from '../assets/img/who-pay.png'
+import todoList from '../assets/img/todo-list.png'
+import myPortfolio from '../assets/img/my-portfolio.png'
+import coronaOyy from '../assets/img/coronaOyy.png'
 
-import iconProjecWeb from '../dist/img/web-project-link.svg'
-import iconProjectGithub from '../dist/img/github-project-link.svg'
-import iconProjectFigma from '../dist/img/figma-project-link.svg'
+import iconProjecWeb from '../assets/img/web-project-link.svg'
+import iconProjectGithub from '../assets/img/github-project-link.svg'
+import iconProjectFigma from '../assets/img/figma-project-link.svg'
 
 
 export const headerLinks = [

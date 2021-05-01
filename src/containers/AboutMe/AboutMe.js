@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../components/Button'
-import {aboutData} from '../Data/data'
-import {ScrollTopHandler} from '../handler/ScrollTopHandler'
-import resume from '../dist/img/me.png'
+import Button from '../../components/Button/Button'
+import {aboutData} from '../../Data/data'
+import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
+import resume from '../../assets/img/me.png'
 
 
 const AboutMe = () => {
@@ -36,6 +36,8 @@ const AboutMe = () => {
 
                                 <a 
                                     href={resume} 
+                                    target="_blank"
+                                    rel="noreferrer"
                                     className='btn btn-primary'>
                                     resume
                                 </a>

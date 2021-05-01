@@ -1,5 +1,5 @@
 import React from 'react'
-import {contactData} from '../Data/data'
+import {contactData} from '../../Data/data'
 
 const ContactMe = () => {
     return (

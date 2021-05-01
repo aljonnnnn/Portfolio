@@ -1,5 +1,5 @@
-import './dist/css/main.css'
-import Header from './components/Header'
+import './styles/css/main.css'
+import Header from './components/Header/Header'
 import Home from './pages/Home';
 import About from './pages/About'
 import Portfolio from './pages/Portfolio';

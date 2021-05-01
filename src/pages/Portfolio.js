@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import MyPortfolio from '../Section/MyPortfolio'
+import Footer from '../components/Footer/Footer'
+import MyPortfolio from '../containers/MyPortfolio/MyPortfolio'
 
 const Portfolio = () => {
     return (

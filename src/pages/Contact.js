@@ -1,6 +1,6 @@
 import React from 'react'
-import ContactMe from '../Section/ContactMe'
-import Footer from '../components/Footer'
+import ContactMe from '../containers/ContactMe/ContactMe'
+import Footer from '../components/Footer/Footer'
 
 const Contact = () => {
     return (

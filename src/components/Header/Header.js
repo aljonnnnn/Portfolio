@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import {headerLinks} from '../Data/data'
+import {headerLinks} from '../../Data/data'
 import {NavLink, Link} from 'react-router-dom'
 
 const Header = () => {
