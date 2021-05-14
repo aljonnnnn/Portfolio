@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
-import {aboutData} from '../../Data/data'
+import {aboutData} from '../../data/data'
 import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
 import resume from '../../assets/img/me.png'
 

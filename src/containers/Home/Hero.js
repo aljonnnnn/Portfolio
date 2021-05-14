@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
-import {heroData} from '../../Data/data'
+import {heroData} from '../../data/data'
 import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
 
 const Hero = () => {
