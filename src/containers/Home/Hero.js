@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
 import {heroData} from '../../data/data'
-import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
+import useScrollTop from '../../utils/useScrollTop'
 
 const Hero = () => {
     
@@ -16,7 +16,7 @@ const Hero = () => {
                     href='/about' 
                     className='btn btn-primary' 
                     text='know more'
-                    clicked={ScrollTopHandler}
+                    clicked={useScrollTop}
                 />
             </div>
         </div>

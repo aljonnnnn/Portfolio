@@ -123,7 +123,7 @@ export const skillsData = [
     bootstrap,
     sass,
     react,
-    jquery,
+    // jquery,
     npm,
     figma,
     git,
@@ -226,7 +226,7 @@ export const portfolioData = {
             projectDetail: 'My portfolio is a simple static website mobile first  and more inspire for my self while creating this website.',
             projectLink: 'https://delumenaljon-portfolio.vercel.app/',
             projectImg: myPortfolio,
-            techUse: ['react js', 'scss',],
+            techUse: ['react js', 'react router dom','scss',],
 
             
             webLink: 'https://delumenaljon-portfolio.vercel.app/',

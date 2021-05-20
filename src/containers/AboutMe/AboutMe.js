@@ -1,8 +1,8 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
 import {aboutData} from '../../data/data'
-import {ScrollTopHandler} from '../../handler/ScrollTopHandler'
 import resume from '../../assets/img/me.png'
+import useScrollTop from '../../utils/useScrollTop'
 
 
 const AboutMe = () => {
@@ -31,7 +31,7 @@ const AboutMe = () => {
                                     href='resume.pdf' 
                                     className='btn btn-primary' 
                                     text='resume'
-                                    clicked={ScrollTopHandler}
+                                    clicked={useScrollTop}
                                 />     */}
 
                                 <a 
@@ -46,7 +46,7 @@ const AboutMe = () => {
                                     href='/portfolio' 
                                     className='btn btn-secondary' 
                                     text='portfolio'
-                                    clicked={ScrollTopHandler}
+                                    clicked={useScrollTop}
                                 />
                             </div>
                         </div>
