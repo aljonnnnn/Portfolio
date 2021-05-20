@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
-import {portfolioData} from '../../data/data'
+import {portfolioData} from './myPortfolioData'
 
 const MyPortfolio = () => {
     return (

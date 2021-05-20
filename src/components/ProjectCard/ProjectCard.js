@@ -1,4 +1,4 @@
-import {portfolioData} from '../../data/data'
+import {portfolioData} from './projectCardData'
 
 const ProjectCard = () => {
     return (

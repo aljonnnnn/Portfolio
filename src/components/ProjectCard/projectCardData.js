@@ -1,140 +1,15 @@
-import aboutImg from '../assets/img/me.png'
+import restaurant from '../../assets/img/resturant-template.png'
+import halaka from '../../assets/img/halaka-bootstrap-template.png'
+import whoPay from '../../assets/img/who-pay.png'
+import todoList from '../../assets/img/todo-list.png'
+import myPortfolio from '../../assets/img/my-portfolio.png'
+import coronaOyy from '../../assets/img/coronaOyy.png'
 
-//  Contact
-import emailIcon from '../assets/img/contact-email-icon.svg'
-import phonelIcon from '../assets/img/contact-phone-icon.svg'
-
-
-// Skills 
-import html from '../assets/img/html.svg'
-import css from '../assets/img/css.svg'
-import javascript from '../assets/img/js.svg'
-import bootstrap from '../assets/img/bootstrap.svg'
-import sass from '../assets/img/sass.svg'
-import react from '../assets/img/react.svg'
-// import jquery from '../assets/img/jquery.svg'
-import wordpress from '../assets/img/wordpress.svg'
-import figma from '../assets/img/figma.svg'
-import git from '../assets/img/git.svg'
-import github from '../assets/img/github.svg'
-import vscode from '../assets/img/vscode.svg'
-import npm from '../assets/img/npm.svg'
-import command from '../assets/img/command.svg'
-import stackoverflow from '../assets/img/stackoverflow.svg'
+import iconProjecWeb from '../../assets/img/web-project-link.svg'
+import iconProjectGithub from '../../assets/img/github-project-link.svg'
+import iconProjectFigma from '../../assets/img/figma-project-link.svg'
 
 
-// Portfolio 
-import restaurant from '../assets/img/resturant-template.png'
-import halaka from '../assets/img/halaka-bootstrap-template.png'
-import whoPay from '../assets/img/who-pay.png'
-import todoList from '../assets/img/todo-list.png'
-import myPortfolio from '../assets/img/my-portfolio.png'
-import coronaOyy from '../assets/img/coronaOyy.png'
-
-import iconProjecWeb from '../assets/img/web-project-link.svg'
-import iconProjectGithub from '../assets/img/github-project-link.svg'
-import iconProjectFigma from '../assets/img/figma-project-link.svg'
-
-
-export const headerLinks = [
-    {
-        path: '/',
-        text: 'home',
-
-    },
-    {
-        path: '/about',
-        text: 'about',
-
-    },
-    {
-        path: '/portfolio',
-        text: 'portfolio',
-
-    },
-    {
-        path: '/contact',
-        text: 'contact',
-
-    },
-]
-
-
-// contact section
-export const contactData = {
-    title: 'contact',
-    emailIcon: emailIcon,
-    emailAccount: 'delumenaljon@gmail.com',
-
-    phoneIcon: phonelIcon,
-    phoneNumber: '0907-345-9009'
-
-}
-
-
-// Hero Sectopm
-export const heroData = {
-    heading: 'i am aljon',
-    subHeading: 'frontend web developer',
-    paragraph: 'I am a Front-end Developer who also likes to play around with UI/UX',
-}
-
-export const aboutData = {
-    title: 'about me',
-    img: aboutImg,
-    heading: 'aljon m de lumen',
-
-    paragraphs: [
-        'I am currently taking a Bachelor of Computer Science from the AMA Computer College East Rizal Campus.',
-        'I like to create projects and put them on Github.',
-        'I love building websites and am always looking forward to improving my skills.',
-        'I like to develop any kind of project. Seeking Internship.',
-        'I am interested in exploring the fields of Software Engineering and Web Development. Feel free to reach me directly at delumenaljon@gmail.com.',
-    ],
-
-
-}
-
-// Education section
-export const educationData = {
-    title: 'education',
-
-    schools: [
-        {
-            year: '2020-present',
-            name: 'AMA Computer College East Rizal Campus',
-            address: 'Marikina-Infanta Hwy, Antipolo, 1870 Rizal',
-        },
-
-        {
-            year: '2018-2020',
-            name: 'ICCT Colleges Taytay Satellite Campus',
-            address: '128 Cabrera Rd, Taytay, 1920 Rizal',
-        }
-    ]
-}
-
-
-// skills section
-export const skillsData = [
-    html,
-    css,
-    javascript,
-    bootstrap,
-    sass,
-    react,
-    // jquery,
-    npm,
-    figma,
-    git,
-    github,
-    vscode,
-    wordpress,
-    command,
-    stackoverflow
-]
-
-// portfolio section
 export const portfolioData = {
     title: 'portfolio',
 

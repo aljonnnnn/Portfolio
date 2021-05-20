@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import {headerLinks} from '../../data/data'
+import {headerLinks} from './headerData'
 import {NavLink, Link} from 'react-router-dom'
 import useScrollTop from '../../utils/useScrollTop'
 
