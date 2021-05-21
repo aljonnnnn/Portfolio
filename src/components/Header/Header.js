@@ -2,7 +2,6 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import {headerLinks} from './headerData'
 import {NavLink, Link} from 'react-router-dom'
-import useScrollTop from '../../utils/useScrollTop'
 
 const Header = () => {
 
@@ -11,6 +10,11 @@ const Header = () => {
     
     const navLinkHandlerFalse = () => {
         setToggleNav(false);
+    }
+
+    const linkScrollTop = () => {
+        setToggleNav(false)
+        window.scrollTo(0,0);
     }
     
     useEffect(() => {
@@ -32,7 +36,7 @@ const Header = () => {
                     {headerLinks.map((headerLink, index) => {
                         return (
                             <li className="nav__item" key={index}>
-                                <NavLink exact to={headerLink.path}  activeClassName='active' className={`nav__link ${'awit' === headerLink ? 'active' : ''}`} onClick={useScrollTop} >{headerLink.text}</NavLink>
+                                <NavLink exact to={headerLink.path}  activeClassName='active' className={`nav__link ${'awit' === headerLink ? 'active' : ''}`} onClick={linkScrollTop} >{headerLink.text}</NavLink>
                             </li>
                         )
                     })
