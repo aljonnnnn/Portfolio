@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button'
 import {aboutMeData} from './aboutMeData'
 import resume from '../../assets/img/me.png'
 import useScrollTop from '../../utils/useScrollTop'
-
+import './about.scss'
 
 const AboutMe = () => {
 

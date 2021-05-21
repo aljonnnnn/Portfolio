@@ -1,5 +1,6 @@
 import React from 'react'
 import {educationData} from './educationData'
+import './education.scss'
 
 
 const Education = () => {

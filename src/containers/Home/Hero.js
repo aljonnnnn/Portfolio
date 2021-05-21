@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../../components/Button/Button'
 import {heroData} from './heroData'
 import useScrollTop from '../../utils/useScrollTop'
+import './hero.scss'
 
 const Hero = () => {
     
