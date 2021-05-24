@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
 import {aboutMeData} from './aboutMeData'
-import resume from '../../assets/img/me.png'
+import resume from '../../assets/ALJON_DE_LUMEN_RESUME.pdf'
 import useScrollTop from '../../utils/useScrollTop'
 import './about.scss'
 
