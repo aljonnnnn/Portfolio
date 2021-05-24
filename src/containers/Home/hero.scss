@@ -15,48 +15,48 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        padding: 0 15px;
+        padding: 0 0.9375rem;
         width: 100%;
 
         @media (min-width: $small) {
-            max-width: 560px;
+            max-width: 35rem;
         }
     }
 
     &__heading {
         color: $font-color-1;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
 
         @media (min-width: $small) {
-            font-size: 92px;
+            font-size: 5.625rem;
         }
     }
 
     &__sub-heading {
         display: block;
         color: $font-color-2;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
         letter-spacing: 0;
 
         @media (min-width: $small) {
-            font-size: 40px;
+            font-size: 2.5rem;
         }
     }
 
     &__paragraph {
         color: $font-color-2;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1.75;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
 
         @media (min-width: $small) {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 
@@ -64,13 +64,13 @@
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 130px;
+        bottom: 8.125rem;
         left: 50%;
         width: 100%;
         transform: translateX(-50%);
 
         @media (max-width: $xsmall) {
-            bottom: 80px;
+            bottom: 5rem;
         }
 
         @media (min-width: $large) {
@@ -80,13 +80,13 @@
 
     &__icon {
         display: inline-block;
-        width: 36px;
-        height: 36px;
-        padding: 8px;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0.5rem;
         text-align: center;
         border-radius: 50%;
         background-color: $bg-color-2;
-        margin: 0 15px;
+        margin: 0 0.9375rem;
         transition: all 0.3s ease;
 
         &-fill {
@@ -98,8 +98,8 @@
         }
 
         img {
-            max-width: 16px;
-            max-height: 16px;
+            max-width: 1rem;
+            max-height: 1rem;
         }
 
         &:hover {
