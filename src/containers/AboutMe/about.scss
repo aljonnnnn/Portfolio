@@ -8,7 +8,6 @@
     &__flex {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         flex-wrap: wrap;
         margin-right: -0.9375rem;
         margin-left: -0.9375rem;
@@ -33,7 +32,6 @@
         @media (min-width: $large) {
             &:first-child {
                 width: 40%;
-                text-align: center;
             }
     
             &:last-child {
@@ -46,6 +44,7 @@
 
     &__img {
         border-radius: 0.625rem;
+        max-width: 100%;
     }
 
     &__heading {

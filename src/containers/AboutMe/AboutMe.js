@@ -13,7 +13,7 @@ const AboutMe = () => {
                     <h2 className="section-heading">{aboutMeData.title}</h2>
                     <div className="about__flex">
                         <div className="about__box">
-                            <div className="about__item">
+                            <div className="about__item text-center">
                                 <img src={aboutMeData.img} alt="" className="about__img"/>
                             </div>
                         </div>
