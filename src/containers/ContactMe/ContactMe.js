@@ -1,28 +1,37 @@
 import React from 'react'
 import {contactMeData} from './contactMeData'
 import './contact.scss'
+import {
+    ContactSection,
+    ContactSectionHeading,
+    ContactFlex,
+    ContactBox,
+    ContactItem,
+    ContactIcon,
+    ContactDetail
+} from './contactElements'
 
 const ContactMe = () => {
     return (
-        <div className="contact" id="contact">
+        <ContactSection id="contact">
             <div className="container">
-                <h2 className="section-heading">{contactMeData.title}</h2>
-                <div className="contact__flex">
-                    <div className="contact__box">
-                        <div className="contact__item">
-                            <span className="contact__icon"><img src={contactMeData.emailIcon} alt="" /></span>
-                            <span className="contact__contact">{contactMeData.emailAccount}</span>
-                        </div>
-                    </div>
-                    <div className="contact__box">
-                        <div className="contact__item">
-                            <span className="contact__icon"><img src={contactMeData.phoneIcon} alt="" /></span>
-                            <span className="contact__contact">{contactMeData.phoneNumber}</span>
-                        </div>
-                    </div>
-                </div>
+                <ContactSectionHeading>{contactMeData.title}</ContactSectionHeading>
+                <ContactFlex>
+                    <ContactBox>
+                        <ContactItem>
+                            <ContactIcon><img src={contactMeData.emailIcon} alt="" /></ContactIcon>
+                            <ContactDetail>{contactMeData.emailAccount}</ContactDetail>
+                        </ContactItem>
+                    </ContactBox>
+                    <ContactBox>
+                        <ContactItem>
+                            <ContactIcon><img src={contactMeData.phoneIcon} alt="" /></ContactIcon>
+                            <ContactDetail>{contactMeData.phoneNumber}</ContactDetail>
+                        </ContactItem>
+                    </ContactBox>
+                </ContactFlex>
             </div>
-        </div>
+        </ContactSection>
     )
 }
 
