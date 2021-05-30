@@ -1,25 +1,33 @@
 import React from 'react'
 import {skillsData} from './skillsData'
-import './skills.scss'
+// import './skills.scss'
+import {
+    SkillsSection,
+    SectionHeading,
+    FlexLayout,
+    Box,
+    Item,
+    Image
+} from './skillsElements'
 
 const Skills = () => {
     return (
-        <div className="skills" id="skills">
+        <SkillsSection id="skills">
                 <div className="container">
-                    <h2 className="section-heading">my backpack</h2>
-                    <div className="skills__flex">
+                    <SectionHeading>my backpack</SectionHeading>
+                    <FlexLayout>
                         {skillsData.map((skillImg, index) => {
                             return (
-                                <div className="skills__box" key={index}>
-                                    <div className="skills__item">
-                                        <img src={skillImg} alt="" className="skills__img" />
-                                    </div>
-                                </div>
+                                <Box key={index}>
+                                    <Item>
+                                        <Image src={skillImg} alt="" />
+                                    </Item>
+                                </Box>
                             )
                         })}
-                    </div>
+                    </FlexLayout>
                 </div>
-            </div>
+            </SkillsSection>
     )
 }
 

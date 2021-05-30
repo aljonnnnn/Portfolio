@@ -2,29 +2,38 @@ import React from 'react'
 import {aboutMeData} from './aboutMeData'
 import resume from '../../assets/ALJON_DE_LUMEN_RESUME.pdf'
 import useScrollTop from '../../utils/useScrollTop'
-import './about.scss'
+// import './about.scss'
 import { ButtonFile, ButtonSecondary } from '../../components/Button/buttonElements'
-
+import {
+    AboutSection,
+    SectionHeading,
+    FlexLayout,
+    Box,
+    Item,
+    Image,
+    Heading,
+    Paragraph
+} from './aboutMeElements'
 
 const AboutMe = () => {
 
     return (
-        <div className="about" id="about">
+        <AboutSection id="about">
             <div className="container">
-                <h2 className="section-heading">{aboutMeData.title}</h2>
-                <div className="about__flex">
-                    <div className="about__box">
-                        <div className="about__item text-center">
-                            <img src={aboutMeData.img} alt="" className="about__img"/>
-                        </div>
-                    </div>
-                    <div className="about__box">
-                        <div className="about__item">
-                            <h3 className="about__heading">{aboutMeData.heading}</h3>
+                <SectionHeading>{aboutMeData.title}</SectionHeading>
+                <FlexLayout>
+                    <Box>
+                        <Item>
+                            <Image src={aboutMeData.img} alt="" className="about__img"/>
+                        </Item>
+                    </Box>
+                    <Box>
+                        <Item>
+                            <Heading>{aboutMeData.heading}</Heading>
     
                             {aboutMeData.paragraphs.map((paragraph, index) => {
                                 return (
-                                    <p className="about__paragraph" key={index}>{paragraph}</p>
+                                    <Paragraph key={index}>{paragraph}</Paragraph>
                                 )
                             })}
                             
@@ -40,11 +49,11 @@ const AboutMe = () => {
                                 onClick={useScrollTop}>
                                     portfolio
                             </ButtonSecondary>
-                        </div>
-                    </div>
-                </div>
+                        </Item>
+                    </Box>
+                </FlexLayout>
             </div>
-        </div>
+        </AboutSection>
     )
 }
 

@@ -1,32 +1,43 @@
 import React from 'react'
 import {educationData} from './educationData'
-import './education.scss'
+// import './education.scss'
+import {
+    EducationSection,
+    SectionHeading,
+    FlexLayout,
+    Box,
+    Item,
+    SchoolYear,
+    SchoolContainer,
+    SchoolName,
+    SchoolAddress
+} from './educationElements'
 
 
 const Education = () => {
     return (
-        <div className="education" id="education">
+        <EducationSection id="education">
                 <div className="container">
-                    <h2 className="section-heading">{educationData.title}</h2>
-                    <div className="education__flex">
+                    <SectionHeading>{educationData.title}</SectionHeading>
+                    <FlexLayout>
                         
                         {educationData.schools.map((school, index) => {
                             return (
-                                <div className="education__box" key={index}>
-                                    <div className="education__item">
-                                        <h3 className="education__heading">{school.year}</h3>
-                                        <div className="education__school-container">
-                                            <p className="education__name">{school.name}</p>
-                                            <span className="education__address">{school.address}</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Box key={index}>
+                                    <Item>
+                                        <SchoolYear>{school.year}</SchoolYear>
+                                        <SchoolContainer>
+                                            <SchoolName>{school.name}</SchoolName>
+                                            <SchoolAddress>{school.address}</SchoolAddress>
+                                        </SchoolContainer>
+                                    </Item>
+                                </Box>
                             )
                         })}
 
-                    </div>
+                    </FlexLayout>
                 </div>
-            </div>
+            </EducationSection>
     )
 }
 
