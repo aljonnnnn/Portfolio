@@ -9,7 +9,7 @@ export const ContactSection = styled.div`
     }
 `
 
-export const ContactSectionHeading = styled.h2`
+export const SectionHeading = styled.h2`
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -18,7 +18,7 @@ export const ContactSectionHeading = styled.h2`
     margin-bottom: 3.75rem;
 `
 
-export const ContactFlex = styled.div`
+export const FlexLayout = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@ export const ContactFlex = styled.div`
     margin-right: -0.9375rem;
 `
 
-export const ContactBox = styled.div`
+export const Box = styled.div`
     width: 80%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -46,14 +46,14 @@ export const ContactBox = styled.div`
     }
 `
 
-export const ContactItem = styled.div`
+export const Item = styled.div`
     text-align: center;
     background-color: rgba(37, 54, 73, 1);
     border: 1px solid rgba(44, 64, 86, 1);
     padding: 1.25rem;
 `
 
-export const ContactIcon = styled.span`
+export const Icon = styled.span`
     display: inline-block;
     width: 4rem;
     height: 4.125rem;
@@ -62,13 +62,13 @@ export const ContactIcon = styled.span`
     padding: 1.4375rem 1.25rem;
     margin-bottom: 1.5625rem;
 
-    
+
     img {
         width: 1.5rem;
     }
 `
 
-export const ContactDetail = styled.span`
+export const Detail = styled.span`
     display: block;
     font-size: 0.875rem;
     font-weight: 400;

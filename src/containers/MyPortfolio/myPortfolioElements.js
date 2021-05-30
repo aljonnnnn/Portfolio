@@ -6,7 +6,7 @@ export const PortfolioSection = styled.div`
     padding: 7.5rem 0 4.375rem;
 `
 
-export const PortfolioSectionHeading = styled.h2`
+export const SectionHeading = styled.h2`
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -19,7 +19,7 @@ export const PortfolioSectionHeading = styled.h2`
     }
 `
 
-export const PortfolioFlex = styled.div`
+export const FlexLayout = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

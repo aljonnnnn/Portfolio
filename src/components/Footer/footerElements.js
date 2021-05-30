@@ -6,13 +6,13 @@ export const FooterSection = styled.footer`
     border-top: 1px solid rgba(44, 64, 86, 1);
 `
 
-export const FooterFlex = styled.div`
+export const FlexLayout = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 `
 
-export const FooterIcon = styled.a`
+export const Icon = styled.a`
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;
@@ -39,7 +39,7 @@ export const FooterIcon = styled.a`
     }
 `
 
-export const FooterCredits = styled.div`
+export const Credits = styled.div`
     display: block;
     text-align: center;
     font-size: 1rem;

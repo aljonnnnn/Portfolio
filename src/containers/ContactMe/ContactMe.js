@@ -1,35 +1,35 @@
 import React from 'react'
 import {contactMeData} from './contactMeData'
-import './contact.scss'
+// import './contact.scss'
 import {
     ContactSection,
-    ContactSectionHeading,
-    ContactFlex,
-    ContactBox,
-    ContactItem,
-    ContactIcon,
-    ContactDetail
+    SectionHeading,
+    FlexLayout,
+    Box,
+    Item,
+    Icon,
+    Detail
 } from './contactElements'
 
 const ContactMe = () => {
     return (
         <ContactSection id="contact">
             <div className="container">
-                <ContactSectionHeading>{contactMeData.title}</ContactSectionHeading>
-                <ContactFlex>
-                    <ContactBox>
-                        <ContactItem>
-                            <ContactIcon><img src={contactMeData.emailIcon} alt="" /></ContactIcon>
-                            <ContactDetail>{contactMeData.emailAccount}</ContactDetail>
-                        </ContactItem>
-                    </ContactBox>
-                    <ContactBox>
-                        <ContactItem>
-                            <ContactIcon><img src={contactMeData.phoneIcon} alt="" /></ContactIcon>
-                            <ContactDetail>{contactMeData.phoneNumber}</ContactDetail>
-                        </ContactItem>
-                    </ContactBox>
-                </ContactFlex>
+                <SectionHeading>{contactMeData.title}</SectionHeading>
+                <FlexLayout>
+                    <Box>
+                        <Item>
+                            <Icon><img src={contactMeData.emailIcon} alt="" /></Icon>
+                            <Detail>{contactMeData.emailAccount}</Detail>
+                        </Item>
+                    </Box>
+                    <Box>
+                        <Item>
+                            <Icon><img src={contactMeData.phoneIcon} alt="" /></Icon>
+                            <Detail>{contactMeData.phoneNumber}</Detail>
+                        </Item>
+                    </Box>
+                </FlexLayout>
             </div>
         </ContactSection>
     )

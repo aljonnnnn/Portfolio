@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PortfolioBox = styled.div`
+export const Box = styled.div`
     width: 100%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -17,14 +17,14 @@ export const PortfolioBox = styled.div`
     }
 `
 
-export const PortfolioItem = styled.div`
+export const Item = styled.div`
     background-color: rgba(37, 54, 73, 1);
     border: 1px solid rgba(44, 64, 86, 1);
     border-radius: 0.25rem;
     padding: 1.5625rem;
 `
 
-export const PortfolioImgLink = styled.a`
+export const ImgLink = styled.a`
     display: block;
     overflow: hidden;
     position: relative;
@@ -49,12 +49,12 @@ export const PortfolioImgLink = styled.a`
     }
 
 `
-export const PortfolioImage = styled.img`
+export const Image = styled.img`
     max-height: 230px !important;
     transition: all 0.3s ease;
 `
 
-export const PorfolioTitle = styled.h3`
+export const Title = styled.h3`
     font-size: 1.5rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
@@ -63,7 +63,7 @@ export const PorfolioTitle = styled.h3`
     margin-bottom: 0.9375rem;
 `
 
-export const PortfolioDetails = styled.p`
+export const Detail = styled.p`
     font-size: 0.875rem;
     font-weight: 400;
     color: rgba(192, 204, 218, 1);
@@ -75,12 +75,12 @@ export const PortfolioDetails = styled.p`
     }
 `
 
-export const PorfolioTechContainer = styled.div`
+export const TechContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
 `
 
-export const PortfolioTechUse = styled.span`
+export const TechUse = styled.span`
     display: inline-block;
     padding: 0.3125rem 0.625rem;
     font-size: 0.625rem;
@@ -90,12 +90,12 @@ export const PortfolioTechUse = styled.span`
     margin-bottom: 0.9375rem;
 `
 
-export const PortfolioProjectLinkContainer = styled.div`
+export const ProjectLinkContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
 `
 
-export const PortfolioProjectLink = styled.a`
+export const ProjectLink = styled.a`
     position: relative;
     display: inline-block;
     margin-right: 0.625rem;

@@ -1,40 +1,40 @@
 import {portfolioData} from './projectCardData'
 import { 
-    PortfolioBox, 
-    PortfolioItem, 
-    PortfolioImgLink, 
-    PortfolioImage, 
-    PorfolioTitle, 
-    PortfolioDetails, 
-    PorfolioTechContainer, 
-    PortfolioTechUse, 
-    PortfolioProjectLinkContainer, 
-    PortfolioProjectLink} from './projectCardElements'
+    Box, 
+    Item, 
+    ImgLink, 
+    Image, 
+    Title, 
+    Detail, 
+    TechContainer, 
+    TechUse, 
+    ProjectLinkContainer, 
+    ProjectLink} from './projectCardElements'
 
 const ProjectCard = () => {
     return (
         <>
             {portfolioData.projects.slice(0).reverse().map((project, index) => {
                 return (
-                    <PortfolioBox key={index}>
-                        <PortfolioItem>
-                            <PortfolioImgLink href={project.projectLink} target="_blank" rel="noreferrer"><PortfolioImage src={project.projectImg} alt="" /></PortfolioImgLink>
-                            <PorfolioTitle>{project.projectName}</PorfolioTitle>
-                            <PortfolioDetails>{project.projectDetail}</PortfolioDetails>
+                    <Box key={index}>
+                        <Item>
+                            <ImgLink href={project.projectLink} target="_blank" rel="noreferrer"><Image src={project.projectImg} alt="" /></ImgLink>
+                            <Title>{project.projectName}</Title>
+                            <Detail>{project.projectDetail}</Detail>
 
-                            <PorfolioTechContainer>
-                                {project.techUse.map((techItem, index) => <PortfolioTechUse key={index}>{techItem}</PortfolioTechUse>)}
-                            </PorfolioTechContainer>
+                            <TechContainer>
+                                {project.techUse.map((techItem, index) => <TechUse key={index}>{techItem}</TechUse>)}
+                            </TechContainer>
                         
-                            <PortfolioProjectLinkContainer>
+                            <ProjectLinkContainer>
                                 {project.iconLinks.map((iconLink, index) => {
                                     return (
-                                        <PortfolioProjectLink href={iconLink} target="_blank" rel="noreferrer" key={index}><img src={project.iconImgs[index]} alt='' /></PortfolioProjectLink>
+                                        <ProjectLink href={iconLink} target="_blank" rel="noreferrer" key={index}><img src={project.iconImgs[index]} alt='' /></ProjectLink>
                                     )
                                 })}
-                            </PortfolioProjectLinkContainer>
-                        </PortfolioItem>
-                    </PortfolioBox>
+                            </ProjectLinkContainer>
+                        </Item>
+                    </Box>
                 )
             })
             }

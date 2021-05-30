@@ -11,7 +11,7 @@ export const HeroSection = styled.div`
     }
 `
 
-export const HeroText = styled.div`
+export const Text = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,7 +25,7 @@ export const HeroText = styled.div`
     }
 `
 
-export const HeroHeading = styled.h1`
+export const Heading = styled.h1`
     color: rgba(255, 255, 255, 1);
     font-size: 2.5rem;
     font-weight: 600;
@@ -37,7 +37,7 @@ export const HeroHeading = styled.h1`
     }
 `
 
-export const HeroSubHeading = styled.span`
+export const SubHeading = styled.span`
     display: block;
     color: rgba(192, 204, 218, 1);
     font-size: 1.125rem;
@@ -50,7 +50,7 @@ export const HeroSubHeading = styled.span`
     }
 `
 
-export const HeroParagraph = styled.p`
+export const Paragraph = styled.p`
     color: rgba(192, 204, 218, 1);
     font-size: 1rem;
     font-weight: 400;

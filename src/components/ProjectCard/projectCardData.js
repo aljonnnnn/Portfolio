@@ -101,7 +101,7 @@ export const portfolioData = {
             projectDetail: 'My portfolio is a simple static website mobile first  and more inspire for my self while creating this website.',
             projectLink: 'https://delumenaljon-portfolio.vercel.app/',
             projectImg: myPortfolio,
-            techUse: ['react js', 'react router dom','scss',],
+            techUse: ['react js', 'react router dom','styled-components',],
 
             
             webLink: 'https://delumenaljon-portfolio.vercel.app/',
