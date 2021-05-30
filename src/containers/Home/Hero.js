@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../../components/Button/Button'
 import {heroData} from './heroData'
 import useScrollTop from '../../utils/useScrollTop'
 import './hero.scss'
+import { ButtonPrimary } from '../../components/Button/buttonElements'
 
 const Hero = () => {
     
@@ -13,15 +13,17 @@ const Hero = () => {
                     <span className="hero__sub-heading">{heroData.subHeading}</span>
                 </h1>
                 <p className="hero__paragraph">{heroData.paragraph}</p>
-                <Button 
-                    href='/about' 
-                    className='btn btn-primary' 
-                    text='know more'
-                    clicked={useScrollTop}
-                />
+                <ButtonPrimary
+                    to='/about' 
+                    onClick={useScrollTop}>
+                        know more
+                </ButtonPrimary>
             </div>
         </div>
     )
 }
+
+
+
 
 export default Hero

@@ -1,9 +1,10 @@
 import React from 'react'
-import Button from '../../components/Button/Button'
 import {aboutMeData} from './aboutMeData'
 import resume from '../../assets/ALJON_DE_LUMEN_RESUME.pdf'
 import useScrollTop from '../../utils/useScrollTop'
 import './about.scss'
+import { ButtonFile, ButtonSecondary } from '../../components/Button/buttonElements'
+
 
 const AboutMe = () => {
 
@@ -26,28 +27,19 @@ const AboutMe = () => {
                                     <p className="about__paragraph" key={index}>{paragraph}</p>
                                 )
                             })}
-
-                            {/* <Button 
-                                href='resume.pdf' 
-                                className='btn btn-primary' 
-                                text='resume'
-                                clicked={useScrollTop}
-                            />     */}
-
-                            <a 
-                                href={resume} 
-                                target="_blank"
-                                rel="noreferrer"
-                                className='btn btn-primary'>
-                                resume
-                            </a>
-
-                            <Button 
-                                href='/portfolio' 
-                                className='btn btn-secondary' 
-                                text='portfolio'
-                                clicked={useScrollTop}
-                            />
+                            
+                            <ButtonFile 
+                                href={resume}
+                                target='_blank'
+                                rel='noreferrer'>
+                                    resume
+                            </ButtonFile>
+                            
+                            <ButtonSecondary
+                                to='/portfolio' 
+                                onClick={useScrollTop}>
+                                    portfolio
+                            </ButtonSecondary>
                         </div>
                     </div>
                 </div>
@@ -55,5 +47,6 @@ const AboutMe = () => {
         </div>
     )
 }
+
 
 export default AboutMe
