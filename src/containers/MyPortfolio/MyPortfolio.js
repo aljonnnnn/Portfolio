@@ -2,17 +2,22 @@ import React from 'react'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import {portfolioData} from './myPortfolioData'
 import './portfolio.scss'
+import {
+    PortfolioSection,
+    PortfolioSectionHeading,
+    PortfolioFlex
+} from './myPortfolioElements'
 
 const MyPortfolio = () => {
     return (
-        <div className="portfolio" id="portfolio">
+        <PortfolioSection id="portfolio">
             <div className="container">
-                <h2 className="section-heading">{portfolioData.title}</h2>
-                <div className="portfolio__flex">
+                <PortfolioSectionHeading>{portfolioData.title}</PortfolioSectionHeading>
+                <PortfolioFlex>
                     <ProjectCard />
-                </div>
+                </PortfolioFlex>
             </div>
-        </div>
+        </PortfolioSection>
     )
 }
 
