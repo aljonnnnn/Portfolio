@@ -1,15 +1,24 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import {headerLinks} from './headerData'
-import {NavLink, Link} from 'react-router-dom'
-import './header.scss'
+// import './header.scss'
+import { 
+    HeaderSection, 
+    NavSection, 
+    Logo, 
+    Hamburger, 
+    Line, 
+    Menu, 
+    MenuItem, 
+    MenuLink 
+} from './headerElements'
 
 const Header = () => {
 
     const [toggleNav, setToggleNav] = useState(false);
     const [scroll, setScroll] = useState(false);
     
-    const navLinkHandlerFalse = () => {
+    const toggleNavFalse = () => {
         setToggleNav(false);
     }
 
@@ -25,27 +34,26 @@ const Header = () => {
     })
 
     return (
-        <header className={`header ${scroll ? 'header--scroll' : ''}`}>
-            <nav className="nav container">
-                <Link to="/" className="nav__logo" onClick={navLinkHandlerFalse} >ADL<span className="logo-dot">.</span></Link>
-                <div className={`nav__hamburger ${toggleNav ? 'active' : ''}`} onClick={() => setToggleNav(!toggleNav) }>
-                    <span className="nav__line"></span>
-                    <span className="nav__line"></span>
-                    <span className="nav__line"></span>
-                </div>
-                <ul className={`nav__menu ${toggleNav === true ? 'navmenu--show' : ''}`}>
+        <HeaderSection scroll={scroll}>
+            <NavSection className='container'>
+                <Logo to="/" onClick={toggleNavFalse} >ADL<span>.</span></Logo>
+                <Hamburger toggleNav={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
+                    <Line toggleNav={toggleNav}></Line>
+                    <Line toggleNav={toggleNav}></Line>
+                    <Line toggleNav={toggleNav}></Line>
+                </Hamburger>
+                <Menu toggleNav={toggleNav}>
                     {headerLinks.map((headerLink, index) => {
                         return (
-                            <li className="nav__item" key={index}>
-                                <NavLink exact to={headerLink.path}  activeClassName='active' className={`nav__link ${'awit' === headerLink ? 'active' : ''}`} onClick={linkScrollTop} >{headerLink.text}</NavLink>
-                            </li>
+                            <MenuItem key={index}>
+                                <MenuLink exact to={headerLink.path}  activeClassName='active' onClick={linkScrollTop} >{headerLink.text}</MenuLink>
+                            </MenuItem>
                         )
                     })
-
                     }
-                </ul>
-            </nav>
-        </header>
+                </Menu>
+            </NavSection>
+        </HeaderSection>
     )
 }
 
