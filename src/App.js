@@ -1,16 +1,18 @@
-import './styles/global.scss'
+// import './styles/global.scss'
 import Header from './components/Header/Header'
 import Home from './pages/Home';
 import About from './pages/About'
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { GlobalStyle } from './GlobalStyle';
 
 function App() {
   return (
     <div className="App">
       <Router>
       <Header />
+      <GlobalStyle/>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
