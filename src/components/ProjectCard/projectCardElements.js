@@ -9,17 +9,17 @@ export const Box = styled.div`
         margin-bottom: 4.375rem;
     }
 
-    @media (min-width: 576px) {
+    @media (min-width: ${({theme}) => theme.smallBP}) {
         width: 50%;
     }
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         width: 41.66666666666667%;
     }
 `
 
 export const Item = styled.div`
-    background-color: rgba(37, 54, 73, 1);
-    border: 1px solid rgba(44, 64, 86, 1);
+    background-color: ${({theme}) => theme.boxBackground};
+    border: 1px solid ${({theme}) => theme.boxBorder};
     border-radius: 0.25rem;
     padding: 1.5625rem;
 `
@@ -57,7 +57,7 @@ export const Image = styled.img`
 export const Title = styled.h3`
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     text-transform: capitalize;
     margin-top: 1.5625rem;
     margin-bottom: 0.9375rem;
@@ -66,11 +66,11 @@ export const Title = styled.h3`
 export const Detail = styled.p`
     font-size: 0.875rem;
     font-weight: 400;
-    color: rgba(192, 204, 218, 1);
+    color: ${({theme}) => theme.fontColor2};
     margin-bottom: 0.9375rem;
 
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         font-size: 1rem;
     }
 `
@@ -85,7 +85,7 @@ export const TechUse = styled.span`
     padding: 0.3125rem 0.625rem;
     font-size: 0.625rem;
     text-transform: uppercase;
-    background-color: rgba(28, 41, 56, 1);
+    background-color: ${({theme}) => theme.backgroundColor1};
     margin-right: 0.625rem;
     margin-bottom: 0.9375rem;
 `

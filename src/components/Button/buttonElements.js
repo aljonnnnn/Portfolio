@@ -8,15 +8,15 @@ export const ButtonPrimary = styled(Link)`
     text-transform: uppercase;
     text-align: center;
 
-    @media (max-width: 576px) {
+    @media (max-width: ${({theme}) => theme.smallBP}) {
         width: 8.75rem;
         padding: 0.625rem 0.9375rem;
     }
 
-    border: 1px solid rgba(12, 102, 255, 1);
-    background-color: rgba(12, 102, 255, 1);
+    border: 1px solid ${({theme}) => theme.primaryColor};
+    background-color: ${({theme}) => theme.primaryColor};
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     transition: opacity 0.2s ease;
     opacity: 1;
 
@@ -26,7 +26,6 @@ export const ButtonPrimary = styled(Link)`
 `;
 
 
-
 export const ButtonSecondary = styled(Link)` 
     display: inline-block;
     width: 10rem;
@@ -34,23 +33,24 @@ export const ButtonSecondary = styled(Link)`
     text-transform: uppercase;
     text-align: center;
 
-    @media (max-width: 576px) {
+    @media (max-width: ${({theme}) => theme.smallBP}) {
         width: 8.75rem;
         padding: 0.625rem 0.9375rem;
     }
 
-    border: 1px solid rgba(44, 64, 86, 1);
+    border: 1px solid ${({theme}) => theme.boxBorder};
     background-color: transparent;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     transition: all 0.2s ease;
 
     &:hover {
-        border: 1px solid rgba(12, 102, 255, 1);
-        background-color: rgba(12, 102, 255, 1);
-        color: rgba(255, 255, 255, 1);
+        border: 1px solid ${({theme}) => theme.primaryColor};
+        background-color: ${({theme}) => theme.primaryColor};
+        color: ${({theme}) => theme.fontColor1};
     }
 `;
+
 
 export const ButtonFile = styled.a` 
     display: inline-block;
@@ -59,14 +59,14 @@ export const ButtonFile = styled.a`
     text-transform: uppercase;
     text-align: center;
     margin-right: 1.25rem;
-    border: 1px solid rgba(12, 102, 255, 1);
-    background-color: rgba(12, 102, 255, 1);
+    border: 1px solid ${({theme}) => theme.primaryColor};
+    background-color: ${({theme}) => theme.primaryColor};
     font-size: 1rem;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     transition: opacity 0.2s ease;
     opacity: 1;
 
-    @media (max-width: 576px) {
+    @media (max-width: ${({theme}) => theme.smallBP}) {
         width: 8.75rem;
         padding: 0.625rem 0.9375rem;
     }

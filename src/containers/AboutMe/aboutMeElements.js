@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutSection = styled.div`
-    background: rgba(28, 41, 56, 1);
+    background: ${({theme}) => theme.backgroundColor1};
     padding: 7.5rem 0 4.375rem;
 `
 
@@ -13,7 +13,7 @@ export const SectionHeading = styled.h2`
     text-align: center;
     margin-bottom: 3.75rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         text-align: left;
     }
 `
@@ -42,7 +42,7 @@ export const Box = styled.div`
     @media (min-width: 576px) {
         width: 50%;
     }
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         &:first-child {
             width: 40%;
         }
@@ -64,12 +64,12 @@ export const Image = styled.img`
 
 export const Heading = styled.h3`
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 0.9375rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         font-size: 2rem;
     }
 `
@@ -77,10 +77,10 @@ export const Heading = styled.h3`
 export const Paragraph = styled.p`
     font-size: 0.875rem;
     font-weight: 400;
-    color: $font-color-2;
+    color: ${({theme}) => theme.fontColor2};
     margin-bottom: 0.9375rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         font-size: 1rem;
     }
 `

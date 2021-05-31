@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link, NavLink } from 'react-router-dom'
 
 export const HeaderSection = styled.header`
-    background-color: rgba(28, 41, 56, 1);
+    background-color: ${({theme}) => theme.backgroundColor1};
     position: fixed;
     top: 0;
     left: 0;
@@ -22,25 +22,25 @@ export const NavSection = styled.nav`
     flex-wrap: wrap;
     height: 100%;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         max-width: 71.25rem;
     }
 `
 
 export const Logo = styled(Link)`
     font-size: 2rem;
-    color: rgba(12, 102, 255, 1);
+    color: ${({theme}) => theme.primaryColor};
     font-weight: 700;
     line-height: 1;
     & span {
-        color: rgba(255, 255, 255, 1);
+        color: ${({theme}) => theme.fontColor1};
     }
 `
 
 export const Hamburger = styled.div`
     cursor: pointer;
 
-    @media (min-width: 576px) {
+    @media (min-width: ${({theme}) => theme.smallBP}) {
         display: none;
     }
 
@@ -51,7 +51,7 @@ export const Line = styled.span`
     display: block;
     width: 2.1875rem;
     height: 0.25rem;
-    background: rgba(255, 255, 255, 1);
+    background: ${({theme}) => theme.fontColor1};
     transition: all 0.2s cubic-bezier(0.8, 0.2, 0.7, 1.3), width 0.2s 0.1s cubic-bezier(0.7, 0.2, 0.7, 1.4);
 
     &:not(:last-child) {
@@ -70,12 +70,12 @@ export const Line = styled.span`
 `
 
 export const Menu = styled.ul`
-    @media (min-width: 576px) {
+    @media (min-width: ${({theme}) => theme.smallBP}) {
         width: auto;
         display: flex !important;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: ${({theme}) => theme.smallBP}) {
         overflow: hidden;
         height: 0;
         width: 100%;
@@ -87,7 +87,7 @@ export const Menu = styled.ul`
 `
 
 export const MenuItem = styled.li`
-    @media (min-width: 576px) {
+    @media (min-width: ${({theme}) => theme.smallBP}) {
         margin-left: 2.5rem;
     }
 `
@@ -96,15 +96,15 @@ export const MenuLink = styled(NavLink)`
     display: block;
     font-size: 1rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: ${({theme}) => theme.fontColor1};
     text-transform: capitalize;
     padding: 0.625rem 0;
 
     &:hover {
-        color: rgba(12, 102, 255, 1);
+        color: ${({theme}) => theme.primaryColor};
     }
 
     &.active {
-        color: rgba(12, 102, 255, 1);
+        color: ${({theme}) => theme.primaryColor};
     }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SkillsSection = styled.div`
-    background: rgba(31, 45, 61, 1);
+    background: ${({theme}) => theme.backgroundColor2};
     padding: 4.375rem 0;
 `
 
@@ -13,7 +13,7 @@ export const SectionHeading = styled.div`
     text-align: center;
     margin-bottom: 3.75rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         text-align: left;
     }
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const PortfolioSection = styled.div`
-    background: rgba(28, 41, 56, 1);
+    background: ${({theme}) => theme.backgroundColor1};
     padding: 7.5rem 0 4.375rem;
 `
 
@@ -14,7 +14,7 @@ export const SectionHeading = styled.h2`
     text-align: center;
     margin-bottom: 3.75rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: ${({theme}) => theme.largeBP}) {
         text-align: left;
     }
 `

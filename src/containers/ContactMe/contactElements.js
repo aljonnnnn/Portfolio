@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const ContactSection = styled.div`
-    background-color: rgba(31, 45, 61, 1);
+    background-color: ${({theme}) => theme.backgroundColor1};
     padding: 7.5rem 0 4.375rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${({theme}) => theme.mediumBP}) {
         height: calc(100vh - 11.3125rem);
     }
 `
@@ -35,7 +35,7 @@ export const Box = styled.div`
         margin-bottom: 1.875rem;
     }
 
-    @media (min-width: 576px) {
+    @media (min-width: ${({theme}) => theme.smallBP}) {
         width: 50%;
         padding: 0 1.875rem;
     }
@@ -48,8 +48,8 @@ export const Box = styled.div`
 
 export const Item = styled.div`
     text-align: center;
-    background-color: rgba(37, 54, 73, 1);
-    border: 1px solid rgba(44, 64, 86, 1);
+    background-color: ${({theme}) => theme.boxBackground};
+    border: 1px solid ${({theme}) => theme.boxBorder};
     padding: 1.25rem;
 `
 
@@ -58,7 +58,7 @@ export const Icon = styled.span`
     width: 4rem;
     height: 4.125rem;
     border-radius: 50%;
-    background-color: rgba(28, 41, 56, 1);
+    background-color: ${({theme}) => theme.backgroundColor1};
     padding: 1.4375rem 1.25rem;
     margin-bottom: 1.5625rem;
 

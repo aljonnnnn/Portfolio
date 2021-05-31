@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const FooterSection = styled.footer`
-    background-color: rgba(31, 45, 61, 1);
+    background-color: ${({theme}) => theme.backgroundColor2};
     padding: 3.125rem 0 2.5rem;
-    border-top: 1px solid rgba(44, 64, 86, 1);
+    border-top: 1px solid ${({theme}) => theme.boxBorder};
 `
 
 export const FlexLayout = styled.div`
@@ -17,7 +17,7 @@ export const Icon = styled.a`
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.6875rem 0.75rem;
-    background-color: rgba(28, 41, 56, 1);
+    background-color: ${({theme}) => theme.backgroundColor1};
     text-align: center;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -35,7 +35,7 @@ export const Icon = styled.a`
     }
 
     &:hover {
-        background-color: rgba(12, 102, 255, 1);
+        background-color: ${({theme}) => theme.primaryColor};
     }
 `
 
