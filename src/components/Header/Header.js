@@ -1,7 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import {headerLinks} from './headerData'
-// import './header.scss'
 import { 
     HeaderSection, 
     NavSection, 

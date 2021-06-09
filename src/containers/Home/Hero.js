@@ -1,7 +1,6 @@
 import React from 'react'
 import {heroData} from './heroData'
 import useScrollTop from '../../utils/useScrollTop'
-// import './hero.scss'
 import { ButtonPrimary } from '../../components/Button/buttonElements'
 import {
     HeroSection,

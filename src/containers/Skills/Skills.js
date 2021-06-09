@@ -1,6 +1,5 @@
 import React from 'react'
 import {skillsData} from './skillsData'
-// import './skills.scss'
 import {
     SkillsSection,
     SectionHeading,

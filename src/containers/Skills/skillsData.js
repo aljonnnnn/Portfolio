@@ -5,6 +5,7 @@ import javascript from '../../assets/img/js.svg'
 import bootstrap from '../../assets/img/bootstrap.svg'
 import sass from '../../assets/img/sass.svg'
 import react from '../../assets/img/react.svg'
+import redux from '../../assets/img/redux.svg'
 import jquery from '../../assets/img/jquery.svg'
 import wordpress from '../../assets/img/wordpress.svg'
 import figma from '../../assets/img/figma.svg'
@@ -23,10 +24,11 @@ export const skillsData = [
     sass,
     react,
     // jquery,
-    npm,
-    figma,
+    redux,
     git,
+    figma,
     github,
+    npm,
     vscode,
     // wordpress,
     command,

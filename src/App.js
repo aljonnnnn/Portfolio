@@ -14,8 +14,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <Router>
-        <Header />
         <GlobalStyle/>
+        <Header />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
