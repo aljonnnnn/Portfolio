@@ -1,3 +1,3 @@
 export const portfolioData = {
-    title: 'portfolio'
+    title: 'projects'
 }

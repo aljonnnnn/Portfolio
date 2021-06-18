@@ -10,8 +10,8 @@ export const headerLinks = [
 
     },
     {
-        path: '/portfolio',
-        text: 'portfolio',
+        path: '/projects',
+        text: 'projects',
 
     },
     {
