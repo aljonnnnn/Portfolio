@@ -69,4 +69,4 @@ img {
 ::-webkit-scrollbar-track {
     background: rgba(28, 41, 56, 1);
 }
-`
+`;

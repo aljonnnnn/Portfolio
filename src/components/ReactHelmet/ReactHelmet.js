@@ -1,13 +1,13 @@
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 
-const ReactHelmet = ({title}) => {
-    return (
-        <>
-            <Helmet>
-                <title>{title} | Portfolio</title>
-            </Helmet>
-        </>
-    )
-}
+const ReactHelmet = ({ title }) => {
+  return (
+    <>
+      <Helmet>
+        <title>{title} | Portfolio</title>
+      </Helmet>
+    </>
+  );
+};
 
-export default ReactHelmet
+export default ReactHelmet;
