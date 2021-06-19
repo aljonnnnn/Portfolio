@@ -3,15 +3,13 @@ import AboutMe from '../containers/AboutMe/AboutMe'
 import Education from '../containers/Education/Education'
 import Footer from '../components/Footer/Footer'
 import Skills from '../containers/Skills/Skills'
-import { Helmet } from 'react-helmet'
+import ReactHelmet from '../components/ReactHelmet/ReactHelmet'
 
 
 const About = () => {
     return (
         <>
-            <Helmet>
-                <title>About | Portfolio</title>
-            </Helmet>
+            <ReactHelmet title='About' />
             <AboutMe />
             <Education />
             <Skills />

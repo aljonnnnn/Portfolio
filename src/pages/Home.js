@@ -1,13 +1,11 @@
 import React from 'react'
 import Hero from '../containers/Home/Hero'
-import { Helmet } from 'react-helmet'
+import ReactHelmet from '../components/ReactHelmet/ReactHelmet'
 const Home = () => {
     
     return (
         <>
-            <Helmet>
-                <title>Aljon De Lumen | Portfolio</title>
-            </Helmet>
+            <ReactHelmet title='Aljon De Lumen' />
             <Hero />
         </>
     )

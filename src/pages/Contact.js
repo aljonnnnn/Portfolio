@@ -1,14 +1,12 @@
 import React from 'react'
 import ContactMe from '../containers/ContactMe/ContactMe'
 import Footer from '../components/Footer/Footer'
-import { Helmet } from 'react-helmet'
+import ReactHelmet from '../components/ReactHelmet/ReactHelmet'
 
 const Contact = () => {
     return (
         <>
-            <Helmet>
-                <title>Contact | Portfolio</title>
-            </Helmet>
+            <ReactHelmet title='Contact' />
             <ContactMe />
             <Footer />
         </>

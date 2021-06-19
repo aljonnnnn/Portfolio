@@ -44,7 +44,7 @@ const AboutMe = () => {
                             </ButtonFile>
                             
                             <ButtonSecondary
-                                to='/portfolio' 
+                                to='/projects' 
                                 onClick={useScrollTop}>
                                     portfolio
                             </ButtonSecondary>
