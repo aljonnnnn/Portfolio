@@ -15,6 +15,9 @@ import vscode from "../../assets/img/vscode.svg";
 import npm from "../../assets/img/npm.svg";
 import command from "../../assets/img/command.svg";
 import stackoverflow from "../../assets/img/stackoverflow.svg";
+import next from '../../assets/img/next.svg'
+import tailwind from '../../assets/img/tailwind.svg'
+import typescript from '../../assets/img/typescript.svg'
 
 export const skillsData = [
   html,
@@ -29,8 +32,11 @@ export const skillsData = [
   figma,
   github,
   npm,
+  tailwind,
   vscode,
   // wordpress,
   command,
   stackoverflow,
+  // next,
+  // typescript
 ];
