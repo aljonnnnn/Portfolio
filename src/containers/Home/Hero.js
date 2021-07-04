@@ -1,4 +1,3 @@
-import React from "react";
 import { heroData } from "./heroData";
 import useScrollTop from "../../utils/useScrollTop";
 import { ButtonPrimary } from "../../components/Button/buttonElements";

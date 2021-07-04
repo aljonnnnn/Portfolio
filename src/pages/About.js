@@ -1,9 +1,5 @@
-import React from "react";
-import AboutMe from "../containers/AboutMe/AboutMe";
-import Education from "../containers/Education/Education";
-import Footer from "../components/Footer/Footer";
-import Skills from "../containers/Skills/Skills";
-import ReactHelmet from "../components/ReactHelmet/ReactHelmet";
+import { ReactHelmet, Footer } from '../components'
+import { Education, AboutMe, Skills } from "../containers";
 
 const About = () => {
   return (

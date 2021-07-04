@@ -5,7 +5,6 @@ export const contactMeData = {
   title: "contact",
   emailIcon: emailIcon,
   emailAccount: "delumenaljon@gmail.com",
-
   phoneIcon: phonelIcon,
-  phoneNumber: "0907-345-9009",
+  phoneNumber: "0938-975-9009",
 };

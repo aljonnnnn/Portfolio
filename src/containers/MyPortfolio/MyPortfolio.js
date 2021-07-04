@@ -1,7 +1,5 @@
-import React from "react";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { ProjectCard } from '../../components'
 import { portfolioData } from "./myPortfolioData";
-// import './portfolio.scss'
 import {
   PortfolioSection,
   SectionHeading,

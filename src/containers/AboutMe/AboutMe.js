@@ -1,4 +1,3 @@
-import React from "react";
 import { aboutMeData } from "./aboutMeData";
 import resume from "../../assets/ALJON_DE_LUMEN_RESUME.pdf";
 import useScrollTop from "../../utils/useScrollTop";

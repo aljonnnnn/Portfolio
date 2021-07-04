@@ -1,6 +1,6 @@
-import React from "react";
-import Hero from "../containers/Home/Hero";
-import ReactHelmet from "../components/ReactHelmet/ReactHelmet";
+import { ReactHelmet } from "../components";
+import { Hero } from "../containers";
+
 const Home = () => {
   return (
     <>

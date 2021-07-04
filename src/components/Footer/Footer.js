@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterSection, FlexLayout, Icon, Credits } from "./footerElements";
 
 const Footer = () => {

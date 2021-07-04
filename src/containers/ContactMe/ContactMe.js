@@ -1,4 +1,3 @@
-import React from "react";
 import { contactMeData } from "./contactMeData";
 import {
   ContactSection,

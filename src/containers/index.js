@@ -1,0 +1,6 @@
+export { default as AboutMe } from './AboutMe/AboutMe'
+export { default as ContactMe } from './ContactMe/ContactMe'
+export { default as Education } from './Education/Education'
+export { default as Hero } from './Home/Hero'
+export { default as MyPortfolio } from './MyPortfolio/MyPortfolio'
+export { default as Skills } from './Skills/Skills'
